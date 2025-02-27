@@ -135,15 +135,18 @@ async function generateTranslationFilesForLocale(locale, configData) {
 
       initDefaultInputs(cleanedOutputFileData, page, locale, baseURL);
 
+      // Loop through keys to check for changes
+      // Exit early if key doesn't exist on the page we're on in the loop
       Object.keys(inputFileData.keys).forEach((inputKey) => {
         const inputTranslationObj = inputFileData.keys[inputKey];
+
         // If input doesn't exist on this page exit early
         if (!inputTranslationObj.pages[page]) {
           return;
         }
 
         // Only add the key to our output data if it still exists in base.json
-        // If entry no longer exists in base.json it's content has changed in the visual editor
+        // If entry no longer exists in base.json it's original has changed
         if (translationFileData[inputKey]) {
           cleanedOutputFileData[inputKey] = translationFileData[inputKey];
         }

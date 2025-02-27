@@ -8,16 +8,16 @@
 		"value": " RSS Feed "
 	},
 	"cloudcannon": {
-		"original": " CloudCannon ",
-		"value": " CloudCannon "
+		"original": " [object Object] ",
+		"value": " [object Object] "
 	},
 	"github": {
-		"original": " GitHub ",
-		"value": " GitHub "
+		"original": " [object Object] ",
+		"value": " [object Object] "
 	},
 	"keep-what-you-need-delete-the-rest": {
-		"original": " Keep what you need. Delete the rest. ",
-		"value": " Keep what you need. Delete the rest. "
+		"original": " [object Object] ",
+		"value": " [object Object] "
 	},
 	"markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro": {
 		"original": "A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.",
@@ -44,8 +44,8 @@
 		"value": "This is <strong>new</strong> and should <em>now</em> work."
 	},
 	"rosey-cloudcannon-multilingual-connector": {
-		"original": " Rosey - CloudCannon Multilingual Connector ",
-		"value": " Rosey - CloudCannon Multilingual Connector "
+		"original": " [object Object] ",
+		"value": " [object Object] "
 	},
 	"markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way": {
 		"original": "A new. test paragraph that has to be long enough words but end in a certain, way.",

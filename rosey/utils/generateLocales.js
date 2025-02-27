@@ -26,9 +26,7 @@ dotenv.config();
   }
 })();
 
-// The generateLocales function runs on each separate locale
 async function generateLocale(locale, configData) {
-  // console.log(configData);
   const translationsDirPath = configData.rosey_paths.translations_dir_path;
   const localesDirPath = configData.rosey_paths.locales_dir_path;
   const excludedContentFiles = configData.visual_editing.excluded_files;
@@ -60,44 +58,10 @@ async function generateLocale(locale, configData) {
     await readFileWithFallback(localeURLsPath, "{}")
   );
 
+  // Get current translations
   const translationsFiles = await fs.promises.readdir(translationsLocalePath, {
     recursive: true,
   });
-
-  // - Look through all the pages on the site for translation frontmatter keys
-
-  const contentPagesTranslationConfig = {
-    "404.html": {},
-  };
-  const locales = configData.locales;
-  locales.map((locale) => {
-    const localeKeyName = locale.replace("-", "_");
-    contentPagesTranslationConfig["404.html"][`translate_${localeKeyName}`];
-  });
-  const contentDirectoryFiles = await fs.promises.readdir(contentDirectory, {
-    recursive: true,
-  });
-
-  await Promise.all(
-    contentDirectoryFiles.map(async (file) => {
-      const filePath = path.join(contentDirectory, file);
-      if (
-        !(await isDirectory(filePath)) &&
-        !excludedContentFiles.includes(file)
-      ) {
-        // Check pages frontmatter to see if we should translate
-        const fileRawData = await readFileWithFallback(filePath);
-        const fileFrontmatter = YAML.parse(fileRawData.split("---")[1]);
-        const pageTranslationsConfig = fileFrontmatter.translations ?? {};
-        const fileAsHtmlName = file
-          .replace("pages/", "")
-          .replace("index.md", "index.html")
-          .replace(".mdx", "/index.html")
-          .replace(".md", "/index.html");
-        contentPagesTranslationConfig[fileAsHtmlName] = pageTranslationsConfig;
-      }
-    })
-  );
 
   // Loop through each file in the translations directory
   const localeDataEntries = {};
@@ -248,41 +212,13 @@ function processUrlTranslationKey(
 }
 
 function processContentTranslationKey(
-  locale,
   keyName,
   translatedString,
   localeData,
   baseFileData,
-  oldLocaleData,
-  contentPagesTranslationConfig
+  oldLocaleData
 ) {
-  // Loop through the key's page appearances
-  // Check the status of that page's translation config
-  // If any of the page's locale config are set to true some page needs the translation and it must be included
-  // If none of the pages the key is on are selected for translation in that locale, use the original from baseJson
-  let atLeastOnePageAllowed = false;
-  const baseJsonKeyDataPages = baseFileData[keyName].pages;
-  const baseJsonKeyDataPagesKeys = Object.keys(baseJsonKeyDataPages);
-  const localeKey = `translate_${locale.replaceAll("-", "_")}`;
-  baseJsonKeyDataPagesKeys.map((pageKey) => {
-    if (
-      pageKey.startsWith("tags/") ||
-      contentPagesTranslationConfig[pageKey][localeKey]
-    ) {
-      atLeastOnePageAllowed = true;
-    }
-    return;
-  });
-
-  // If at least one page is not allowed for this translation, use the original and exit early
-  if (atLeastOnePageAllowed === false) {
-    return {
-      original: baseFileData[keyName]?.original,
-      value: baseFileData[keyName]?.original,
-    };
-  }
-
-  // Exit early if it's not a new translation
+  // Exit early if it's not a new translation, and use old locales data instead
   if (
     !translatedString ||
     translatedString === oldLocaleData[keyName]?.value ||
@@ -296,7 +232,7 @@ function processContentTranslationKey(
         }
       : localeData[keyName];
   }
-  // Write the value to the locales
+  // If its not an old translation, write the value to the locales file
   return {
     original: baseFileData[keyName]?.original,
     value: translatedString,
@@ -311,8 +247,7 @@ async function processTranslation(
   oldLocaleData,
   oldURLsLocaleData,
   baseFileData,
-  baseURLFileData,
-  contentPagesTranslationConfig
+  baseURLFileData
 ) {
   const localeData = {};
   const localeURLsData = {};
@@ -364,13 +299,11 @@ async function processTranslation(
     }
 
     localeData[keyName] = processContentTranslationKey(
-      locale,
       keyName,
       translatedString,
       localeData,
       baseFileData,
-      oldLocaleData,
-      contentPagesTranslationConfig
+      oldLocaleData
     );
   });
 

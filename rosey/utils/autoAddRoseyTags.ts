@@ -2,7 +2,6 @@ import type { RehypePlugin } from "@astrojs/markdown-remark";
 import { visit, SKIP } from "unist-util-visit";
 import type { Element } from "hast";
 import { generateRoseyMarkdownID } from "./helpers/component-helper.js";
-import { readConfigFile } from "./helpers/file-helper.js";
 
 // Block level elements to add tags to - inline elements should not have tag added
 const textElementTagNames = ["p", "li", "h1", "h2", "h3", "h4", "h5", "h6"];

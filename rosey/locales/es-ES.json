@@ -8,83 +8,83 @@
 		"value": "Fuente RSS"
 	},
 	"cloudcannon": {
-		"original": " CloudCannon ",
-		"value": "Cañón de nubes duplicate"
+		"original": " [object Object] ",
+		"value": " [object Object] "
 	},
 	"github": {
-		"original": " GitHub ",
-		"value": "GitHub (en inglés)"
+		"original": " [object Object] ",
+		"value": " [object Object] "
 	},
 	"keep-what-you-need-delete-the-rest": {
-		"original": " Keep what you need. Delete the rest. ",
-		"value": "Conserva lo que necesitas Elimina el resto"
+		"original": " [object Object] ",
+		"value": " [object Object] "
 	},
 	"markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro": {
 		"original": "A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.",
-		"value": "<p>Un sitio de demostración para el conector multilingüe Rosey-CloudCannon para Astro.</p>\n"
+		"value": "A demo site for the Rosey-CloudCannon Multilingual Connector for Astro."
 	},
 	"markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color": {
 		"original": "It's cold, but it's beautiful. Get tough with it, get strong. Brown is such a nice color.",
-		"value": "<p>Hace frío, pero es hermoso. Sé duro con eso, hazte fuerte. El marrón es un color muy bonito.</p>\n"
+		"value": "It's cold, but it's beautiful. Get tough with it, get strong. Brown is such a nice color."
 	},
 	"markdown:that-is-when-you-can-experience-true-joy-when-you-have-no-fear-maybe-just-to-play-a-little-we'll-put-a-little-tree-here": {
 		"original": "That is when you can experience <strong>true</strong> <strong>joy</strong>, when you have no fear. Maybe, just to play a little, we'll put a little tree here.",
-		"value": "<p>Ahí es cuando puedes experimentar <strong>la verdadera</strong> <strong>alegría</strong>, cuando no tienes miedo. Quizás, solo para jugar un poco, pongamos un arbolito aquí.</p>\n"
+		"value": "That is when you can experience <strong>true</strong> <strong>joy</strong>, when you have no fear. Maybe, just to play a little, we'll put a little tree here."
 	},
 	"markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics": {
 		"original": "They say <em>everything</em> looks better with odd numbers of things. But sometimes I put even numbers—just to upset the critics.",
-		"value": "<p>Dicen que <em>todo</em> se ve mejor con números impares de cosas. Pero a veces pongo números pares, solo para molestar a los críticos.</p>\n"
+		"value": "They say <em>everything</em> looks better with odd numbers of things. But sometimes I put even numbers—just to upset the critics."
 	},
 	"markdown:this-content-and-it's-translations-are-editable-from-the-visual-editor-as-well-as-data-files-providing-an-easy-to-use-interface-for-non-technical-people-to-maintain-a-multilingual-site": {
 		"original": "This content and it's translations are editable from the visual editor, as well as data files, providing an easy to use interface for non-technical people to maintain a multilingual site.",
-		"value": "<p>Este contenido y sus traducciones son editables desde el editor visual, así como los archivos de datos, proporcionando una interfaz fácil de usar para que las personas sin conocimientos técnicos mantengan un sitio multilingüe.</p>\n"
+		"value": "This content and it's translations are editable from the visual editor, as well as data files, providing an easy to use interface for non-technical people to maintain a multilingual site."
 	},
 	"markdown:this-is-new-and-should-now-work": {
 		"original": "This is <strong>new</strong> and should <em>now</em> work.",
-		"value": "<p>Esto es <strong>nuevo</strong> y <em>ahora</em> debería funcionar. QA'd in the data file.</p>\n"
+		"value": "This is <strong>new</strong> and should <em>now</em> work."
 	},
 	"rosey-cloudcannon-multilingual-connector": {
-		"original": " Rosey - CloudCannon Multilingual Connector ",
-		"value": " Rosey - Conector multilingüe CloudCannon "
+		"original": " [object Object] ",
+		"value": " [object Object] "
 	},
 	"markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way": {
 		"original": "A new. test paragraph that has to be long enough words but end in a certain, way.",
-		"value": "<p>Un nuevo párrafo de prueba que tiene que ser lo suficientemente largo como para terminar de cierta manera</p>\n"
+		"value": "A new. test paragraph that has to be long enough words but end in a certain, way."
 	},
 	"markdown:all-you-have-to-learn-here-is-how-to-have-fun-just-pretend-you-are-a-whisper-floating-across-a-mountain-you-have-to-make-almighty-decisions-when-you're-the-creator-there-we-are": {
 		"original": "All you <strong>have</strong> to learn <em>here</em> is how to have fun. Just pretend you are a whisper floating across a mountain. You have to make almighty <sub>decisions</sub> when you’re the <sup>creator</sup>. There we are.",
-		"value": "<p>Todo lo que <strong>tienes</strong> que aprender <em>aquí</em> es cómo divertirte. Solo imagina que eres un susurro flotando a través de una montaña. Tienes que tomar decisiones todopoderosas cuando eres el creador. Ahí estamos.</p>\n"
+		"value": "All you <strong>have</strong> to learn <em>here</em> is how to have fun. Just pretend you are a whisper floating across a mountain. You have to make almighty <sub>decisions</sub> when you’re the <sup>creator</sup>. There we are."
 	},
 	"markdown:another-code-block": {
 		"original": "Another code block:",
-		"value": "<p>Otro bloque de código</p>\n"
+		"value": "Another code block:"
 	},
 	"markdown:here's-a-new-paragraph-with-a-link-in-the-content-editor": {
 		"original": "Here’s a new paragraph with a <a href=\"https://cloudcannon.com/\">link</a> in the content editor.",
-		"value": "<p>Aquí hay un nuevo párrafo con un <a href=\"https://cloudcannon.com/\">enlace</a> en el editor de contenido.</p>\n"
+		"value": "Here’s a new paragraph with a <a href=\"https://cloudcannon.com/\">link</a> in the content editor."
 	},
 	"markdown:mix-your-color-marbly-don't-mix-it-dead-trees-cover-up-a-multitude-of-sins-the-only-prerequisite-is-that-it-makes-you-happy-if-it-makes-you-happy-then-it's-good-when-you-do-it-your-way-you-can-go-anywhere-you-choose-we'll-have-a-super-time-don't-fiddle-with-it-all-day": {
 		"original": "Mix your color marbly don’t mix it dead. Trees cover up a multitude of sins. The only prerequisite is that it makes you happy. If it makes you happy then it’s good. When you do it your way you can go anywhere you choose. We’ll have a super time. Don’t fiddle with it all day.",
-		"value": "<p>Mezcla tu color marmoleado, no lo mezcles muerto. Los árboles encubren multitud de pecados. El único requisito previo es que te haga feliz. Si te hace feliz, entonces es bueno. Cuando lo haces a tu manera, puedes ir a cualquier lugar que elijas. Lo pasaremos genial. No juegues con él todo el día.</p>\n"
+		"value": "Mix your color marbly don’t mix it dead. Trees cover up a multitude of sins. The only prerequisite is that it makes you happy. If it makes you happy then it’s good. When you do it your way you can go anywhere you choose. We’ll have a super time. Don’t fiddle with it all day."
 	},
 	"markdown:take-your-time-speed-will-come-later-you-can-bend-rivers-but-when-i-get-home-the-only-thing-i-have-power-over-is-the-garbage-let's-get-wild-today-if-you-don't-think-every-day-is-a-good-day-try-missing-a-few-you'll-see-play-with-the-angles-we-don't-have-to-be-committed-we-are-just-playing-here": {
 		"original": "Take your time. Speed will come later. You can bend rivers. But when I get home, the only thing I have power over is the garbage. Let’s get wild today. If you don’t think every day is a good day - try missing a few. You’ll see. Play with the angles. We don’t have to be committed. We are just playing here.",
-		"value": "<p>Tómate tu tiempo. La velocidad vendrá después. Se pueden doblar ríos. Pero cuando llego a casa, lo único sobre lo que tengo poder es sobre la basura. Vamos a ponernos salvajes hoy. Si no crees que todos los días son buenos, trata de perderte algunos. Ya lo verás. Juega con los ángulos. No tenemos que estar comprometidos. Solo estamos jugando aquí.</p>\n"
+		"value": "Take your time. Speed will come later. You can bend rivers. But when I get home, the only thing I have power over is the garbage. Let’s get wild today. If you don’t think every day is a good day - try missing a few. You’ll see. Play with the angles. We don’t have to be committed. We are just playing here."
 	},
 	"markdown:we'll-throw-some-old-gray-clouds-in-here-just-sneaking-around-and-having-fun-only-eight-colors-that-you-need-this-is-the-fun-part-put-it-in-leave-it-alone-get-away-from-those-little-christmas-tree-things-we-used-to-make-in-school": {
 		"original": "We’ll throw some old gray clouds in here just sneaking around and having fun. Only eight colors that you need. This is the fun part Put it in, leave it alone. Get away from those little Christmas tree things we used to make in school.",
-		"value": "<p>Lanzaremos algunas viejas nubes grises aquí simplemente escabulléndonos y divirtiéndonos. Solo ocho colores que necesitas. Esta es la parte divertida Ponlo, déjalo en paz. Aléjate de esas cositas de árbol de Navidad que solíamos hacer en la escuela.</p>\n"
+		"value": "We’ll throw some old gray clouds in here just sneaking around and having fun. Only eight colors that you need. This is the fun part Put it in, leave it alone. Get away from those little Christmas tree things we used to make in school."
 	},
 	"markdown:we-have-a-fantastic-little-sky!-we're-trying-to-teach-you-a-technique-here-and-how-to-use-it": {
 		"original": "We have a fantastic little sky! We’re trying to teach you a technique here and how to use it.",
-		"value": "<p>¡Tenemos un pequeño cielo fantástico! Estamos tratando de enseñarte una técnica aquí y cómo usarla.</p>\n"
+		"value": "We have a fantastic little sky! We’re trying to teach you a technique here and how to use it."
 	},
 	"markdown:we-have-all-at-one-time-or-another-mixed-some-mud-it's-beautiful-and-we-haven't-even-done-anything-to-it-yet-let's-make-some-happy-little-clouds-in-our-world-let-your-heart-be-your-guide": {
 		"original": "We have all at one time or another mixed some mud. It’s beautiful - and we haven’t even done anything to it yet. Let’s make some happy little clouds in our world. Let your heart be your guide.",
-		"value": "<p>Todos hemos mezclado en un momento u otro un poco de barro. Es hermoso, y aún no le hemos hecho nada. Vamos a hacer algunas nubecillas felices en nuestro mundo. Deja que tu corazón sea tu guía.</p>\n"
+		"value": "We have all at one time or another mixed some mud. It’s beautiful - and we haven’t even done anything to it yet. Let’s make some happy little clouds in our world. Let your heart be your guide."
 	},
 	"yay-we-support-snippets-now!": {
 		"original": " Yay, we support snippets now! ",
-		"value": "¡Sí, ahora admitimos fragmentos!"
+		"value": " Yay, we support snippets now! "
 	}
 }

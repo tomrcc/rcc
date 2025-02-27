@@ -1,12 +1,8 @@
 ---
 import Icon from "../../utility/icon";
-import {
-  selectRoseyTranslation,
-  generateRoseyID,
-} from "../../../../rosey/utils/helpers/component-helper.js";
+import { generateRoseyId } from "../../../../rosey/utils/helpers/component-helper.js";
 
 interface Props {
-  selected_page_translation: string;
   button_text: {
     original: string;
     es_ES_translation: string;
@@ -21,10 +17,6 @@ interface Props {
 }
 
 const block = Astro.props;
-const translationData = {
-  selected_page_translation: block.selected_page_translation,
-  bookshop_env: ENV_BOOKSHOP_LIVE,
-};
 const hover_brightness = block.hover_brightness;
 ---
 
@@ -37,8 +29,8 @@ const hover_brightness = block.hover_brightness;
         </span>
       ) : null
     }
-    <span data-rosey={generateRoseyID(block.button_text)}>
-      {selectRoseyTranslation(block.button_text, translationData)}
+    <span data-rosey={generateRoseyId(block.button_text)}>
+      {block.button_text}
     </span>
   </a>
 </button>
