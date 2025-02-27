@@ -13,14 +13,6 @@ seo:
   author_twitter_handle: null
   open_graph_type: null
   no_index: false
-translations:
-  selected_page_translation: de-DE
-  translate_es_ES: true
-  url_translation_es_ES: index.html
-  translate_de_DE: true
-  url_translation_de_DE: index.html
-  translate_fr_FR: true
-  url_translation_fr_FR: index.html
 content_blocks:
   - _bookshop_name: hero
     background_color: "#ffffff"

@@ -1,7 +1,7 @@
 import { formatAndSlugifyMarkdownText } from "./markdown-formatters.js";
 const locales = ["es-ES", "de-DE", "fr-FR"];
 
-export function generateRoseyID(data) {
+export function generateRoseyId(data) {
   let text = "";
   if (!data) {
     return "";

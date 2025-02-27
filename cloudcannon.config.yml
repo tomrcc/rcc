@@ -169,37 +169,6 @@ _editables:
     snippet: true
 
 _inputs:
-  translations:
-    type: object
-    options:
-      preview:
-        icon: translate
-  translate_fr_FR:
-    type: switch
-  translate_es_ES:
-    type: switch
-  translate_de_DE:
-    type: switch
-  selected_page_translation:
-    type: select
-    options:
-      values:
-        - None
-        - es-ES
-        - de-DE
-        - fr-FR
-  es_ES_translation:
-    type: textarea
-    options:
-      empty_type: string
-  de_DE_translation:
-    type: textarea
-    options:
-      empty_type: string
-  fr_FR_translation:
-    type: textarea
-    options:
-      empty_type: string
   image_path:
     type: image
     comment: The path to the source file of the image to be optimized.

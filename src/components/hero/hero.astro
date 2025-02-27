@@ -2,13 +2,9 @@
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 import Markdown from "../utility/rosey-markdown.astro";
-import {
-  selectRoseyTranslation,
-  generateRoseyID,
-} from "../../../rosey/utils/helpers/component-helper.js";
+import { generateRoseyId } from "../../../rosey/utils/helpers/component-helper.js";
 
 interface Props {
-  selected_page_translation: string;
   background_color: string;
   heading: {
     heading_text: {
@@ -52,11 +48,6 @@ interface Props {
 
 const block = Astro.props;
 
-const translationData = {
-  selected_page_translation: block.selected_page_translation,
-  bookshop_env: ENV_BOOKSHOP_LIVE,
-};
-
 const buttons = import.meta.glob("/src/components/buttons/**/*.astro", {
   eager: true,
 });
@@ -76,14 +67,11 @@ const headingGradientColor = block.heading.heading_gradient_color;
     <div class="hero-content">
       <h1
         class="heading"
-        data-rosey={generateRoseyID(block.heading.heading_text)}>
-        {selectRoseyTranslation(block.heading.heading_text, translationData)}
+        data-rosey={generateRoseyId(block.heading.heading_text)}>
+        {block.heading.heading_text}
       </h1>
       <div class="subheading-text" style={`color: ${block.subheading.color};`}>
-        <Markdown
-          content={block.subheading.markdown_content}
-          selected_page_translation={block.selected_page_translation}
-        />
+        <Markdown content={block.subheading.markdown_content} />
       </div>
       <div class="buttons">
         {

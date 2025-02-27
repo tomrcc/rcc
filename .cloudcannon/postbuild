@@ -12,10 +12,6 @@ then
   echo "🏗️🏗️  Generating translation files from base.json"
   node rosey/utils/generateTranslationFiles.js
   echo "🏗️🏗️  Generated translation files to be edited"
-  echo "🌹🌹 Syncing frontmatter with translation data files"
-  node rosey/utils/syncFrontmatterTranslations.js
-  node rosey/utils/syncFrontmatterUrlTranslations.js
-  echo "🌹🌹 Synced new translations from frontmatter and data files"
   echo "🏗️🏗️  Generating the locales files Rosey needs from our translation files"
   node rosey/utils/generateLocales.js
   echo "🏗️🏗️  Generated locales"
