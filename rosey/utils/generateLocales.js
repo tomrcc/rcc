@@ -82,8 +82,7 @@ async function generateLocale(locale, configData) {
         oldLocaleData,
         oldURLsLocaleData,
         baseFileData,
-        baseURLFileData,
-        contentPagesTranslationConfig
+        baseURLFileData
       );
 
       localeDataEntries[filename] = response;
