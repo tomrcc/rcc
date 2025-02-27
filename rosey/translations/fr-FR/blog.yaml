@@ -1,0 +1,30 @@
+urlTranslation: blog/index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See blog/](blog/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr-FR)
+          comment: Text to translate on [blog/](blog/)
+          inputs: []
+        - heading: Already translated (fr-FR)
+          comment: Text already translated on [blog/](blog/)
+          inputs:
+            - blog
+            - rss-feed
+  blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](blog/#:~:text=Blog)"
+  rss-feed:
+    label: RSS Feed
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](blog/#:~:text=RSS%20Feed)"
+blog: Blog
+rss-feed: Flux RSS

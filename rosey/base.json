@@ -1,0 +1,189 @@
+{
+  "version": 2,
+  "keys": {
+    "blog": {
+      "original": " Blog ",
+      "value": null,
+      "pages": {
+        "404.html": 1,
+        "blog/a-test-page/index.html": 1,
+        "blog/index.html": 1,
+        "index.html": 1,
+        "tags/Testing/index.html": 1
+      },
+      "total": 5
+    },
+    "cloudcannon": {
+      "original": " CloudCannon ",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "github": {
+      "original": " GitHub ",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "keep-what-you-need-delete-the-rest": {
+      "original": " Keep what you need. Delete the rest. ",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro": {
+      "original": "A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way": {
+      "original": "A new. test paragraph that has to be long enough words but end in a certain, way.",
+      "value": null,
+      "pages": {
+        "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:all-you-have-to-learn-here-is-how-to-have-fun-just-pretend-you-are-a-whisper-floating-across-a-mountain-you-have-to-make-almighty-decisions-when-you're-the-creator-there-we-are": {
+      "original": "All you <strong>have</strong> to learn <em>here</em> is how to have fun. Just pretend you are a whisper floating across a mountain. You have to make almighty <sub>decisions</sub> when you’re the <sup>creator</sup>. There we are.",
+      "value": null,
+      "pages": {
+        "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:another-code-block": {
+      "original": "Another code block:",
+      "value": null,
+      "pages": {
+        "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:here's-a-new-paragraph-with-a-link-in-the-content-editor": {
+      "original": "Here’s a new paragraph with a <a href=\"https://cloudcannon.com/\">link</a> in the content editor.",
+      "value": null,
+      "pages": {
+        "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color": {
+      "original": "It's cold, but it's beautiful. Get tough with it, get strong. Brown is such a nice color.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:mix-your-color-marbly-don't-mix-it-dead-trees-cover-up-a-multitude-of-sins-the-only-prerequisite-is-that-it-makes-you-happy-if-it-makes-you-happy-then-it's-good-when-you-do-it-your-way-you-can-go-anywhere-you-choose-we'll-have-a-super-time-don't-fiddle-with-it-all-day": {
+      "original": "Mix your color marbly don’t mix it dead. Trees cover up a multitude of sins. The only prerequisite is that it makes you happy. If it makes you happy then it’s good. When you do it your way you can go anywhere you choose. We’ll have a super time. Don’t fiddle with it all day.",
+      "value": null,
+      "pages": {
+        "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:take-your-time-speed-will-come-later-you-can-bend-rivers-but-when-i-get-home-the-only-thing-i-have-power-over-is-the-garbage-let's-get-wild-today-if-you-don't-think-every-day-is-a-good-day-try-missing-a-few-you'll-see-play-with-the-angles-we-don't-have-to-be-committed-we-are-just-playing-here": {
+      "original": "Take your time. Speed will come later. You can bend rivers. But when I get home, the only thing I have power over is the garbage. Let’s get wild today. If you don’t think every day is a good day - try missing a few. You’ll see. Play with the angles. We don’t have to be committed. We are just playing here.",
+      "value": null,
+      "pages": {
+        "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:that-is-when-you-can-experience-true-joy-when-you-have-no-fear-maybe-just-to-play-a-little-we'll-put-a-little-tree-here": {
+      "original": "That is when you can experience <strong>true</strong> <strong>joy</strong>, when you have no fear. Maybe, just to play a little, we'll put a little tree here.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics": {
+      "original": "They say <em>everything</em> looks better with odd numbers of things. But sometimes I put even numbers—just to upset the critics.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:this-content-and-it's-translations-are-editable-from-the-visual-editor-as-well-as-data-files-providing-an-easy-to-use-interface-for-non-technical-people-to-maintain-a-multilingual-site": {
+      "original": "This content and it's translations are editable from the visual editor, as well as data files, providing an easy to use interface for non-technical people to maintain a multilingual site.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:this-is-new-and-should-now-work": {
+      "original": "This is <strong>new</strong> and should <em>now</em> work.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:we'll-throw-some-old-gray-clouds-in-here-just-sneaking-around-and-having-fun-only-eight-colors-that-you-need-this-is-the-fun-part-put-it-in-leave-it-alone-get-away-from-those-little-christmas-tree-things-we-used-to-make-in-school": {
+      "original": "We’ll throw some old gray clouds in here just sneaking around and having fun. Only eight colors that you need. This is the fun part Put it in, leave it alone. Get away from those little Christmas tree things we used to make in school.",
+      "value": null,
+      "pages": {
+        "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:we-have-a-fantastic-little-sky!-we're-trying-to-teach-you-a-technique-here-and-how-to-use-it": {
+      "original": "We have a fantastic little sky! We’re trying to teach you a technique here and how to use it.",
+      "value": null,
+      "pages": {
+        "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:we-have-all-at-one-time-or-another-mixed-some-mud-it's-beautiful-and-we-haven't-even-done-anything-to-it-yet-let's-make-some-happy-little-clouds-in-our-world-let-your-heart-be-your-guide": {
+      "original": "We have all at one time or another mixed some mud. It’s beautiful - and we haven’t even done anything to it yet. Let’s make some happy little clouds in our world. Let your heart be your guide.",
+      "value": null,
+      "pages": {
+        "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    },
+    "rosey-cloudcannon-multilingual-connector": {
+      "original": " Rosey - CloudCannon Multilingual Connector ",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "rss-feed": {
+      "original": " RSS Feed ",
+      "value": null,
+      "pages": {
+        "404.html": 1,
+        "blog/a-test-page/index.html": 1,
+        "blog/index.html": 1,
+        "index.html": 1,
+        "tags/Testing/index.html": 1
+      },
+      "total": 5
+    },
+    "yay-we-support-snippets-now!": {
+      "original": " Yay, we support snippets now! ",
+      "value": null,
+      "pages": {
+        "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    }
+  }
+}

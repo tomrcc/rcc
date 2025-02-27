@@ -1,0 +1,30 @@
+urlTranslation: tags/Testing/index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See tags/Testing/](tags/Testing/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es-ES)
+          comment: Text to translate on [tags/Testing/](tags/Testing/)
+          inputs: []
+        - heading: Already translated (es-ES)
+          comment: Text already translated on [tags/Testing/](tags/Testing/)
+          inputs:
+            - blog
+            - rss-feed
+  blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](tags/Testing/#:~:text=Blog)"
+  rss-feed:
+    label: RSS Feed
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](tags/Testing/#:~:text=RSS%20Feed)"
+blog: Blog
+rss-feed: Fuente RSS
