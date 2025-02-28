@@ -7,46 +7,6 @@
 		"original": " RSS Feed ",
 		"value": "Flux RSS"
 	},
-	"cloudcannon": {
-		"original": " CloudCannon ",
-		"value": "CloudCannon"
-	},
-	"github": {
-		"original": " GitHub ",
-		"value": "GitHub"
-	},
-	"markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro": {
-		"original": "A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.",
-		"value": "<p>Un site de démonstration pour le connecteur multilingue Rosey-CloudCannon pour Astro.</p>\n"
-	},
-	"markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color": {
-		"original": "It's cold, but it's beautiful. Get tough with it, get strong. Brown is such a nice color.",
-		"value": "<p>Il fait froid, mais c'est beau. Il faut s'endurcir, devenir fort. Le marron est une couleur très agréable.</p>\n"
-	},
-	"markdown:testing-everything-still-works-post-tidy-up": {
-		"original": "Testing <strong>everything</strong> still works post <em>tidy up</em>.",
-		"value": "Testing <strong>everything</strong> still works post <em>tidy up</em>."
-	},
-	"markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics": {
-		"original": "They say <em>everything</em> looks better with odd numbers of things. But sometimes I put even numbers—just to upset the critics.",
-		"value": "<p>On dit que <em>tout</em> est plus beau avec un nombre impair de choses. Mais il m'arrive de mettre des nombres pairs, juste pour contrarier les critiques.</p>\n"
-	},
-	"markdown:this-content-and-it's-translations-are-editable-from-the-visual-editor-as-well-as-data-files-providing-an-easy-to-use-interface-for-non-technical-people-to-maintain-a-multilingual-site": {
-		"original": "This content and it's translations are editable from the visual editor, as well as data files, providing an easy to use interface for non-technical people to maintain a multilingual site.",
-		"value": "<p>Ce contenu et ses traductions sont modifiables à partir de l'éditeur visuel, de même que les fichiers de données, ce qui constitue une interface facile à utiliser pour les personnes non spécialisées dans la gestion d'un site multilingue.</p>\n"
-	},
-	"markdown:we're-changing-things": {
-		"original": "We're <em><strong>changing</strong></em> things.",
-		"value": "We're <em><strong>changing</strong></em> things."
-	},
-	"rosey-cloudcannon-connector": {
-		"original": " Rosey - CloudCannon Connector ",
-		"value": " Rosey - CloudCannon Connector "
-	},
-	"this-is-just-a-test": {
-		"original": " This is just a test. ",
-		"value": " This is just a test. "
-	},
 	"markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way": {
 		"original": "A new. test paragraph that has to be long enough words but end in a certain, way.",
 		"value": "<p>Un nouveau paragraphe de test qui doit être suffisamment long mais se terminer d'une certaine manière.</p>\n"
@@ -86,5 +46,45 @@
 	"yay-we-support-snippets-now!": {
 		"original": " Yay, we support snippets now! ",
 		"value": "Nous supportons maintenant les snippets !"
+	},
+	"cloudcannon": {
+		"original": " CloudCannon ",
+		"value": "CloudCannon"
+	},
+	"github": {
+		"original": " GitHub ",
+		"value": "GitHub"
+	},
+	"markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro": {
+		"original": "A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.",
+		"value": "<p>Un site de démonstration pour le connecteur multilingue Rosey-CloudCannon pour Astro.</p>\n"
+	},
+	"markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color": {
+		"original": "It's cold, but it's beautiful. Get tough with it, get strong. Brown is such a nice color.",
+		"value": "<p>Il fait froid, mais c'est beau. Il faut s'endurcir, devenir fort. Le marron est une couleur très agréable.</p>\n"
+	},
+	"markdown:testing-everything-still-works-post-tidy-up": {
+		"original": "Testing <strong>everything</strong> still works post <em>tidy up</em>.",
+		"value": "Testing <strong>everything</strong> still works post <em>tidy up</em>."
+	},
+	"markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics": {
+		"original": "They say <em>everything</em> looks better with odd numbers of things. But sometimes I put even numbers—just to upset the critics.",
+		"value": "<p>On dit que <em>tout</em> est plus beau avec un nombre impair de choses. Mais il m'arrive de mettre des nombres pairs, juste pour contrarier les critiques.</p>\n"
+	},
+	"markdown:this-content-and-it's-translations-are-editable-from-the-visual-editor-as-well-as-data-files-providing-an-easy-to-use-interface-for-non-technical-people-to-maintain-a-multilingual-site": {
+		"original": "This content and it's translations are editable from the visual editor, as well as data files, providing an easy to use interface for non-technical people to maintain a multilingual site.",
+		"value": "<p>Ce contenu et ses traductions sont modifiables à partir de l'éditeur visuel, de même que les fichiers de données, ce qui constitue une interface facile à utiliser pour les personnes non spécialisées dans la gestion d'un site multilingue.</p>\n"
+	},
+	"markdown:we're-changing-things": {
+		"original": "We're <em><strong>changing</strong></em> things.",
+		"value": "We're <em><strong>changing</strong></em> things."
+	},
+	"rosey-cloudcannon-connector": {
+		"original": " Rosey - CloudCannon Connector ",
+		"value": " Rosey - CloudCannon Connector "
+	},
+	"this-is-just-a-test": {
+		"original": " This is just a test. ",
+		"value": " This is just a test. "
 	}
 }
