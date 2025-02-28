@@ -39,9 +39,9 @@
 		"original": "We're <em><strong>changing</strong></em> things.",
 		"value": "We're <em><strong>changing</strong></em> things."
 	},
-	"rosey-cloudcannon-multilingual-connector": {
-		"original": " Rosey - CloudCannon Multilingual Connector ",
-		"value": " Rosey - CloudCannon Mehrsprachiger Konnektor "
+	"rosey-cloudcannon-connector": {
+		"original": " Rosey - CloudCannon Connector ",
+		"value": " Rosey - CloudCannon Connector "
 	},
 	"this-is-just-a-test": {
 		"original": " This is just a test. ",

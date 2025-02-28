@@ -149,8 +149,8 @@
       },
       "total": 1
     },
-    "rosey-cloudcannon-multilingual-connector": {
-      "original": " Rosey - CloudCannon Multilingual Connector ",
+    "rosey-cloudcannon-connector": {
+      "original": " Rosey - CloudCannon Connector ",
       "value": null,
       "pages": {
         "index.html": 1
