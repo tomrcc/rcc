@@ -3,16 +3,17 @@
   - Need to test that, after all the changes to use the config file, everything still works
   - Move migrator into postbuild and toggle on/off
 - Move everything in postbuild one file and run from there to make it less intense
-- Add generation of translation file for 'orphaned' translations
+- Option to put everything into one file instead of split by pages - to replace the old i18n workflow
 - Add generation of shared phrases translation file
   - Can keep them on their individual pages and use the existing overwrite workflow to keep them in sync
 - Add to readme about
   - Initial set up
+  - Using in place of i18n
   - Transferring to an existing site
   - Link to the features on Astro starter for extra features
   - Using the id functions
+  - How to separate unwanted duplicate keys eg. same value on separate pages
   - How long form content works with block level element splitting (including snippets)
-  - Visual editor translations
 - Chase up CC update for mistaken 'Awaiting page translations'
 - Record a new intro youtube video
 - npm audit
