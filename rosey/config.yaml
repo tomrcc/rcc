@@ -2,7 +2,6 @@ locales:
   - es-ES
   - de-DE
   - fr-FR
-  - nl-NL
 base_url: ''
 rosey_paths:
   rosey_base_file_path: ./rosey/base.json
@@ -19,16 +18,6 @@ smartling:
   incoming_translations_dir: ./rosey/smartling-translations/
   outgoing_translations_file_path: ./rosey/outgoing-smartling-translations.json
   outgoing_translation_file_uri: /rosey/translations/
-visual_editing:
-  # visual_editor_syncing_enabled: true
-  # display_orphaned_translations: true
-  content_directory: ./src/content
-  excluded_files:
-    - config.ts
-  # translations_object_name: translations
-  migrator_settings:
-    # migrator_enabled: false
-    components_directory: ./src/components
 # tagged_body_content_elements:
 #   - p
 #   - li
@@ -125,65 +114,6 @@ _inputs:
     comment: >-
       The unique identifier that Smartling uses for this site. Can be anything
       as long as it's unique to this site in your Smartling project.
-  visual_editing:
-    type: object
-    options:
-      preview:
-        icon: edit
-  visual_editor_syncing_enabled:
-    type: switch
-    comment: >-
-      Sync translations in the frontmatter of content pages to the data file and
-      vice versa? This is required to use translations in the visual editor in
-      CloudCannon.
-  display_orphaned_translations:
-    type: switch
-    hidden: '!visual_editor_syncing_enabled'
-    comment: >-
-      If true, display all unaccounted for translations in the pages translation
-      data file, in the translations object. Important if you have opted to not
-      show the translation data files, and are exclusively translating in the
-      visual editor.
-  content_directory:
-    type: text
-    hidden: '!visual_editor_syncing_enabled'
-    comment: >-
-      The path to the directory of content files that the translations belong
-      to.
-  excluded_files:
-    type: array
-    hidden: '!visual_editor_syncing_enabled'
-    comment: >-
-      Excluded files in the content directory that are not part of the
-      translations workflow.
-  translations_object_name:
-    type: text
-    hidden: '!visual_editor_syncing_enabled'
-    comment: >-
-      The keyname that we store page translation config and orphaned
-      translations (if enabled) in on each content page.
-  migrator_settings:
-    type: text
-    hidden: '!visual_editor_syncing_enabled'
-    options:
-      preview:
-        icon: sync_alt
-  migrator_enabled:
-    type: switch
-    hidden: '!visual_editor_syncing_enabled'
-    comment: >-
-      Enable a search through your content files to update frontmatter that has
-      not been updated to suit translating in the visual editor. Changes a
-      translation string to the translation object required to render the
-      translations to the page. Should be used with care to reduce the risk of
-      migrating pieces of frontmatter that weren't intended to be migrated.
-  components_directory:
-    type: text
-    hidden: '!visual_editor_syncing_enabled'
-    comment: >-
-      The directory of Bookshop components used to build our content pages.
-      These must be Bookshop components to use live editing in CloudCannon, and
-      therefore live editing of your translations.
   tagged_body_content_elements:
     type: array
     comment: >-
