@@ -16,24 +16,9 @@ blueprint:
   background_color: "#ffffff"
   heading:
     heading_text:
-      original: Keep what you need. Delete the rest.
-      es_ES_translation:
-      de_DE_translation:
-      fr_FR_translation:
     color: "#393939"
   text:
     markdown_content:
-      original: >-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-        est laborum.
-      es_ES_translation:
-      de_DE_translation:
-      fr_FR_translation:
     color: "#393939"
   media:
     image_path: /src/assets/images/undraw-hello.svg
@@ -47,14 +32,25 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  markdown_content:
-    type: object
-    options:
-      structures: _structures.rosey_translation_markdown
+  type: markdown
+  options:
+    bold: true
+    italic: true
+    link: true
+    undo: true
+    redo: true
+    removeformat: true
+    copyformatting: true
   heading_text:
-    type: object
+    type: markdown
     options:
-      structures: _structures.rosey_translation
+      bold: true
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
   heading:
     options:
       preview:

@@ -16,18 +16,9 @@ blueprint:
   background_color: "#ffffff"
   heading:
     heading_text:
-      original: Astro Bookshop Starter
-      es_ES_translation:
-      de_DE_translation:
-      fr_FR_translation:
     heading_gradient_color: "#a0a2ff"
   subheading:
     markdown_content:
-      original: >-
-        A starting point for developers looking to build a website with Astro, using Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in the CloudCannon CMS.
-      es_ES_translation:
-      de_DE_translation:
-      fr_FR_translation:
     color: "#393939"
   image:
     image_path: /src/assets/images/featured-image-5.jpg
@@ -40,13 +31,25 @@ preview:
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
   markdown_content:
-    type: object
+    type: markdown
     options:
-      structures: _structures.rosey_translation_markdown
+      bold: true
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
   heading_text:
-    type: object
+    type: markdown
     options:
-      structures: _structures.rosey_translation
+      bold: true
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
   heading:
     options:
       preview:
