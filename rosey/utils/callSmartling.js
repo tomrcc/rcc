@@ -166,113 +166,120 @@ export async function callSmartling(configData) {
 
   let pingCount = 0;
 
-  const checkJobStatus = setInterval(async () => {
-    console.log("🔍 Checking translation job status...");
+  const smartlingResult = await new Promise(function (resolve, reject) {
+    const checkJobStatus = setInterval(async () => {
+      console.log("🔍 Checking translation job status...");
 
-    const smartlingJobData = await fetchSmartlingData(
-      jobInfoUrlString,
-      authToken
-    );
-    const jobStatus = smartlingJobData.response.data.jobStatus;
-
-    if (pingCount >= pingMaximum) {
-      console.log(
-        `⏰ Timing out Smartling connection after ${pingCount} API calls.`
+      const smartlingJobData = await fetchSmartlingData(
+        jobInfoUrlString,
+        authToken
       );
-      clearInterval(checkJobStatus);
-    }
-    pingCount++;
-    console.log(`☎️  Smartling translation job status API call: ${pingCount}`);
+      const jobStatus = smartlingJobData.response.data.jobStatus;
 
-    switch (jobStatus) {
-      case "COMPLETED":
-        console.log(`✅✅ Translation: ${jobStatus}, downloading files now!`);
-        clearInterval(checkJobStatus);
-
-        // Get the base.json data to check if keys are old
-        const baseFileData = await readJsonFromFile(roseyBaseFilePath);
-        const baseFileDataKeys = Object.keys(baseFileData.keys);
-
-        for (const locale of locales) {
-          // Get the downloaded translations for each locale
-          const downloadFileParams =
-            new DownloadFileParameters().setRetrievalType(
-              RetrievalType.PUBLISHED
-            );
-          const downloadedFileContent = await filesApi.downloadFile(
-            projectId,
-            outgoingTranslationFileUri,
-            locale,
-            downloadFileParams
-          );
-          const downloadedFileData = JSON.parse(downloadedFileContent);
-
-          // Check if the directory exists, if not create it
-          if (!fs.existsSync(incomingTranslationsDir)) {
-            fs.mkdirSync(incomingTranslationsDir);
-            console.log(`🏗️ Directory '${incomingTranslationsDir}' created.`);
-          }
-
-          // Once we receive something back update our existing smartling translations
-          const existingSmartlingTranslationsPath = path.join(
-            incomingTranslationsDir,
-            `${locale}.json`
-          );
-          const existingSmartlingTranslationsData = await readJsonFromFile(
-            existingSmartlingTranslationsPath
-          );
-
-          const downloadedFileDataKeys = Object.keys(downloadedFileData);
-          downloadedFileDataKeys.forEach((key) => {
-            existingSmartlingTranslationsData[key] = downloadedFileData[key];
-          });
-
-          // Scan through our incoming translations for keys no longer in our base.json and delete them
-          const existingSmartlingTranslationsKeys = Object.keys(
-            existingSmartlingTranslationsData
-          );
-
-          existingSmartlingTranslationsKeys.forEach((key) => {
-            if (!baseFileDataKeys.includes(key)) {
-              console.log("Deleting old key: ", key);
-              delete existingSmartlingTranslationsData[key];
-            }
-          });
-
-          // Write the updated translations
-          fs.writeFileSync(
-            existingSmartlingTranslationsPath,
-            JSON.stringify(existingSmartlingTranslationsData)
-          );
-          console.log(
-            `✅✅ Downloaded ${incomingTranslationsDir}${locale}.json`
-          );
-        }
-        break;
-      case "AWAITING_AUTHORIZATION":
+      if (pingCount >= pingMaximum) {
         console.log(
-          `⏰ Still ${jobStatus} for translation job, waiting for completion...`
+          `⏰ Timing out Smartling connection after ${pingCount} API calls.`
         );
-        if (pingCount >= pingsToWaitForAuth) {
+        clearInterval(checkJobStatus);
+      }
+      pingCount++;
+      console.log(
+        `☎️  Smartling translation job status API call: ${pingCount}`
+      );
+
+      switch (jobStatus) {
+        case "COMPLETED":
+          console.log(`✅✅ Translation: ${jobStatus}, downloading files now!`);
+          clearInterval(checkJobStatus);
+
+          // Get the base.json data to check if keys are old
+          const baseFileData = await readJsonFromFile(roseyBaseFilePath);
+          const baseFileDataKeys = Object.keys(baseFileData.keys);
+
+          for (const locale of locales) {
+            // Get the downloaded translations for each locale
+            const downloadFileParams =
+              new DownloadFileParameters().setRetrievalType(
+                RetrievalType.PUBLISHED
+              );
+            const downloadedFileContent = await filesApi.downloadFile(
+              projectId,
+              outgoingTranslationFileUri,
+              locale,
+              downloadFileParams
+            );
+            const downloadedFileData = JSON.parse(downloadedFileContent);
+
+            // Check if the directory exists, if not create it
+            if (!fs.existsSync(incomingTranslationsDir)) {
+              fs.mkdirSync(incomingTranslationsDir);
+              console.log(`🏗️ Directory '${incomingTranslationsDir}' created.`);
+            }
+
+            // Once we receive something back update our existing smartling translations
+            const existingSmartlingTranslationsPath = path.join(
+              incomingTranslationsDir,
+              `${locale}.json`
+            );
+            const existingSmartlingTranslationsData = await readJsonFromFile(
+              existingSmartlingTranslationsPath
+            );
+
+            const downloadedFileDataKeys = Object.keys(downloadedFileData);
+            downloadedFileDataKeys.forEach((key) => {
+              existingSmartlingTranslationsData[key] = downloadedFileData[key];
+            });
+
+            // Scan through our incoming translations for keys no longer in our base.json and delete them
+            const existingSmartlingTranslationsKeys = Object.keys(
+              existingSmartlingTranslationsData
+            );
+
+            existingSmartlingTranslationsKeys.forEach((key) => {
+              if (!baseFileDataKeys.includes(key)) {
+                console.log("Deleting old key: ", key);
+                delete existingSmartlingTranslationsData[key];
+              }
+            });
+
+            // Write the updated translations
+            fs.writeFileSync(
+              existingSmartlingTranslationsPath,
+              JSON.stringify(existingSmartlingTranslationsData)
+            );
+            console.log(
+              `✅✅ Downloaded ${incomingTranslationsDir}${locale}.json`
+            );
+          }
+          resolve();
+          break;
+        case "AWAITING_AUTHORIZATION":
           console.log(
-            `⏭️ Skipping after ${pingCount} API calls. If still 'Awaiting Authorization' by now, there is probably nothing to translate in this job, and we should have already exited this function.`
+            `⏰ Still ${jobStatus} for translation job, waiting for completion...`
+          );
+          if (pingCount >= pingsToWaitForAuth) {
+            console.log(
+              `⏭️ Skipping after ${pingCount} API calls. If still 'Awaiting Authorization' by now, there is probably nothing to translate in this job, and we should have already exited this function.`
+            );
+            clearInterval(checkJobStatus);
+          }
+          break;
+        case "IN_PROGRESS":
+          console.log(
+            `🏗️ Translation job still ${jobStatus}, waiting and trying again...`
+          );
+          break;
+        case "CANCELLED":
+          console.log(
+            `❌ Translation job ${jobStatus} for some reason. Skipping for now. Go to Smartling dashboard for more details.`
           );
           clearInterval(checkJobStatus);
-        }
-        break;
-      case "IN_PROGRESS":
-        console.log(
-          `🏗️ Translation job still ${jobStatus}, waiting and trying again...`
-        );
-        break;
-      case "CANCELLED":
-        console.log(
-          `❌ Translation job ${jobStatus} for some reason. Skipping for now. Go to Smartling dashboard for more details.`
-        );
-        clearInterval(checkJobStatus);
-        break;
-    }
-  }, pingInterval);
+          break;
+      }
+    }, pingInterval);
+  });
+
+  return smartlingResult;
 }
 
 // Get a token

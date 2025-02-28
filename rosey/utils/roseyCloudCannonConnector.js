@@ -5,7 +5,13 @@ import { readConfigFile } from "./helpers/file-helper.js";
 
 (async () => {
   const configData = await readConfigFile("./rosey/config.yaml");
-  await generateTranslationFiles(configData);
+  console.log("🏗️🏗️ Calling Smartling for translations...");
   await callSmartling(configData);
+  console.log("🏗️🏗️ Finished calling & generating Smartling files!");
+  console.log("🏗️🏗️ Generating translation files...");
+  await generateTranslationFiles(configData);
+  console.log("🏗️🏗️ Finished generating translation files!");
+  console.log("🏗️🏗️ Generating locales files...");
   await generateLocales(configData);
+  console.log("🏗️🏗️ Finished generating locales files!");
 })();

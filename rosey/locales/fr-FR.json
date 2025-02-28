@@ -19,6 +19,10 @@
 		"original": "A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.",
 		"value": "<p>Un site de démonstration pour le connecteur multilingue Rosey-CloudCannon pour Astro.</p>\n"
 	},
+	"markdown:a-new-phrase-to-send-away-again!?-and-one-more-with-a-later-resolve?-and-in-the-correct-order": {
+		"original": "A new phrase to send away. Again!? And one more with a later resolve? And in the correct order.",
+		"value": "<p>Une nouvelle phrase à renvoyer. Encore une fois !? Et un autre avec une résolution plus tardive ? Et dans le bon ordre.</p>\n"
+	},
 	"markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon": {
 		"original": "Control translations via a user friendly interface in CloudCannon.",
 		"value": "<p>Translated in the data editor.</p>\n"
@@ -33,15 +37,15 @@
 	},
 	"markdown:we're-changing-things": {
 		"original": "We're <em><strong>changing</strong></em> things.",
-		"value": "We're <em><strong>changing</strong></em> things."
+		"value": "<p>Nous <em><strong>changeons</strong></em> les choses.</p>\n"
 	},
 	"rosey-cloudcannon-connector": {
 		"original": " Rosey - CloudCannon Connector ",
-		"value": " Rosey - CloudCannon Connector "
+		"value": " Rosey - Connecteur CloudCannon "
 	},
 	"this-is-just-a-test": {
 		"original": " This is just a test. ",
-		"value": " This is just a test. "
+		"value": " Ce n'est qu'un test. "
 	},
 	"markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way": {
 		"original": "A new. test paragraph that has to be long enough words but end in a certain, way.",

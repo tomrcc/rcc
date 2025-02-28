@@ -1,4 +1,3 @@
-- Move everything in postbuild one file and run from there to make it less intense
 - Option to put everything into one file instead of split by pages - to replace the old i18n workflow
 - Add generation of shared phrases translation file
   - Can keep them on their individual pages and use the existing overwrite workflow to keep them in sync
@@ -11,6 +10,8 @@
   - Using the id functions
   - How to separate unwanted duplicate keys eg. same value on separate pages
   - How long form content works with block level element splitting (including snippets)
+  - Using smartling
+  - Debugging locally (include setting up local .env and gitignoring it)
 - Chase up CC update for mistaken 'Awaiting page translations'
 - Record a new intro youtube video
 - npm audit

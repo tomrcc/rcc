@@ -19,9 +19,13 @@
 		"original": "A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.",
 		"value": "<p>Eine Demo-Site für den Rosey-CloudCannon Multilingual Connector für Astro.</p>\n"
 	},
+	"markdown:a-new-phrase-to-send-away-again!?-and-one-more-with-a-later-resolve?-and-in-the-correct-order": {
+		"original": "A new phrase to send away. Again!? And one more with a later resolve? And in the correct order.",
+		"value": "<p>Eine neue Phrase zum Verschicken. Wieder!? Und noch eines mit einer späteren Entschlossenheit? Und zwar in der richtigen Reihenfolge.</p>\n"
+	},
 	"markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon": {
 		"original": "Control translations via a user friendly interface in CloudCannon.",
-		"value": "Control translations via a user friendly interface in CloudCannon."
+		"value": "<p>Steuern Sie Übersetzungen über eine benutzerfreundliche Oberfläche in CloudCannon.</p>\n"
 	},
 	"markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color": {
 		"original": "It's cold, but it's beautiful. Get tough with it, get strong. Brown is such a nice color.",
@@ -33,15 +37,15 @@
 	},
 	"markdown:we're-changing-things": {
 		"original": "We're <em><strong>changing</strong></em> things.",
-		"value": "We're <em><strong>changing</strong></em> things."
+		"value": "<p>Wir <em><strong>verändern</strong></em> Dinge.</p>\n"
 	},
 	"rosey-cloudcannon-connector": {
 		"original": " Rosey - CloudCannon Connector ",
-		"value": " Rosey - CloudCannon Connector "
+		"value": " Rosey - CloudCannon Steckverbinder "
 	},
 	"this-is-just-a-test": {
 		"original": " This is just a test. ",
-		"value": " This is just a test. "
+		"value": " Dies ist nur ein Test. "
 	},
 	"markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way": {
 		"original": "A new. test paragraph that has to be long enough words but end in a certain, way.",
