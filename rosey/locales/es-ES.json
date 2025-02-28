@@ -3,6 +3,10 @@
 		"original": " Blog ",
 		"value": "Blog"
 	},
+	"rss-feed": {
+		"original": " RSS Feed ",
+		"value": "Fuente RSS"
+	},
 	"cloudcannon": {
 		"original": " CloudCannon ",
 		"value": "Cañón de nubes duplicate"
@@ -38,10 +42,6 @@
 	"rosey-cloudcannon-connector": {
 		"original": " Rosey - CloudCannon Connector ",
 		"value": " Rosey - CloudCannon Connector "
-	},
-	"rss-feed": {
-		"original": " RSS Feed ",
-		"value": "Fuente RSS"
 	},
 	"this-is-just-a-test": {
 		"original": " This is just a test. ",
