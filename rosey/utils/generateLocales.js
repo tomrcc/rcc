@@ -29,8 +29,6 @@ dotenv.config();
 async function generateLocale(locale, configData) {
   const translationsDirPath = configData.rosey_paths.translations_dir_path;
   const localesDirPath = configData.rosey_paths.locales_dir_path;
-  const excludedContentFiles = configData.visual_editing.excluded_files;
-  const contentDirectory = configData.visual_editing.content_directory;
   const baseFile = await fs.promises.readFile(
     configData.rosey_paths.rosey_base_file_path
   );
