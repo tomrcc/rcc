@@ -21,16 +21,10 @@ content_blocks:
       heading_text: Rosey - CloudCannon Connector
       heading_gradient_color: '#034AD8'
     subheading:
-      markdown_content: >-
+      markdown_content: |-
         A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.
 
-
-        This content and it's translations are editable from the visual editor,
-        as well as data files, providing an easy to use interface for
-        non-technical people to maintain a multilingual site.
-
-
-        Testing **everything** still works post *tidy up*.
+        Control translations via a user friendly interface in CloudCannon.
       color: '#393939'
     image:
       image_path: /src/assets/images/featured-image-5.jpg
