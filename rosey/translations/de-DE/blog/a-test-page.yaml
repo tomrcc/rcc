@@ -60,7 +60,7 @@ _inputs:
       content: A new. test paragraph that has to be long enough words but end in a
         certain, way.
   markdown:all-you-have-to-learn-here-is-how-to-have-fun-just-pretend-you-are-a-whisper-floating-across-a-mountain-you-have-to-make-almighty-decisions-when-you're-the-creator-there-we-are:
-    label: All you have to learn _here_ is how to hav...
+    label: All you have to learn here is how to have ...
     hidden: false
     type: markdown
     options:
