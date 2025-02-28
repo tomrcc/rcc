@@ -32,15 +32,16 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  type: markdown
-  options:
-    bold: true
-    italic: true
-    link: true
-    undo: true
-    redo: true
-    removeformat: true
-    copyformatting: true
+  markdown_content:
+    type: markdown
+    options:
+      bold: true
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
   heading_text:
     type: markdown
     options:
