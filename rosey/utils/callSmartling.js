@@ -11,25 +11,13 @@ import {
   RetrievalType,
 } from "smartling-api-sdk-nodejs";
 import fs from "fs";
-import YAML from "yaml";
 import path from "path";
 import dotenv from "dotenv";
-import {
-  readJsonFromFile,
-  isDirectory,
-  readFileWithFallback,
-  readConfigFile,
-} from "./helpers/file-helper.js";
+import { readJsonFromFile } from "./helpers/file-helper.js";
 dotenv.config();
 
-(async () => {
-  // We use one object for all translations, and group them under the name /rosey/translations/
-  // A URI is used by smartling as a unique identifier for the set of files being translated
-  // A path needs to be more explicit and say the path begins from the directory being executed in (the root)
-  const configData = await readConfigFile("./rosey/config.yaml");
-
-  // Get variables
-  const userSecret = process.env.DEV_USER_SECRET;
+export async function callSmartling(configData) {
+  const userSecret = process.env.DEV_USER_SECRET; // Set this in env variables
   const projectId = configData.smartling.dev_project_id;
   const userId = configData.smartling.dev_user_identifier;
   const smartlingTranslateEnabled = configData.smartling.smartling_enabled;
@@ -285,7 +273,7 @@ dotenv.config();
         break;
     }
   }, pingInterval);
-})();
+}
 
 // Get a token
 async function getSmartlingAuth(url, data) {
