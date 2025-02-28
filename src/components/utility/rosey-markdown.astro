@@ -25,7 +25,7 @@ const isTextElement = (element: Element) =>
   textElementTagNames.includes(element.tagName);
 
 const { content } = Astro.props;
-const HTMLTextContent = md.render(content.original);
+const HTMLTextContent = content ? md.render(content) : "";
 const hastTree = fromHtmlIsomorphic(HTMLTextContent, { fragment: true });
 visit(hastTree, function (node, index, parent) {
   if (node.type !== "element") {
