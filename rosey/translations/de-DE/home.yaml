@@ -9,6 +9,7 @@ _inputs:
         - heading: Still to translate (de-DE)
           comment: Text to translate on [](https://steaming-shoelace.cloudvent.net/)
           inputs:
+            - markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon
             - markdown:we're-changing-things
             - rosey-cloudcannon-connector
             - this-is-just-a-test
@@ -20,9 +21,7 @@ _inputs:
             - github
             - markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro
             - markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color
-            - markdown:testing-everything-still-works-post-tidy-up
             - markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics
-            - markdown:this-content-and-it's-translations-are-editable-from-the-visual-editor-as-well-as-data-files-providing-an-easy-to-use-interface-for-non-technical-people-to-maintain-a-multilingual-site
             - rss-feed
   blog:
     label: Blog
@@ -65,6 +64,28 @@ _inputs:
       title: Untranslated Text
       icon: translate
       content: A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.
+  markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon:
+    label: Control translations via a user friendly i...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      blockquote: true
+    comment: "[See on
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=Control%20translat\
+      ions%20via,interface%20in%20CloudCannon)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: Control translations via a user friendly interface in CloudCannon.
   markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color:
     label: It's cold, but it's beautiful. Get tough w...
     hidden: false
@@ -88,28 +109,6 @@ _inputs:
       icon: translate
       content: It's cold, but it's beautiful. Get tough with it, get strong. Brown is
         such a nice color.
-  markdown:testing-everything-still-works-post-tidy-up:
-    label: Testing everything still works post _tidy ...
-    hidden: false
-    type: markdown
-    options:
-      bold: true
-      format: p h1 h2 h3 h4
-      italic: true
-      link: true
-      undo: true
-      redo: true
-      removeformat: true
-      copyformatting: true
-      blockquote: true
-    comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=Testing%20everythi\
-      ng%20still,post%20_tidy%20up_)"
-    context:
-      open: false
-      title: Untranslated Text
-      icon: translate
-      content: Testing **everything** still works post _tidy up_.
   markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics:
     label: They say _everything_ looks better with od...
     hidden: false
@@ -133,30 +132,6 @@ _inputs:
       icon: translate
       content: They say _everything_ looks better with odd numbers of things. But
         sometimes I put even numbers—just to upset the critics.
-  markdown:this-content-and-it's-translations-are-editable-from-the-visual-editor-as-well-as-data-files-providing-an-easy-to-use-interface-for-non-technical-people-to-maintain-a-multilingual-site:
-    label: This content and it's translations are edi...
-    hidden: false
-    type: markdown
-    options:
-      bold: true
-      format: p h1 h2 h3 h4
-      italic: true
-      link: true
-      undo: true
-      redo: true
-      removeformat: true
-      copyformatting: true
-      blockquote: true
-    comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=This%20content%20a\
-      nd,a%20multilingual%20site)"
-    context:
-      open: false
-      title: Untranslated Text
-      icon: translate
-      content: This content and it's translations are editable from the visual editor,
-        as well as data files, providing an easy to use interface for
-        non-technical people to maintain a multilingual site.
   markdown:we're-changing-things:
     label: We're _changing_ things.
     hidden: false
@@ -201,19 +176,14 @@ blog: Blog
 cloudcannon: CloudCannon
 github: GitHub (Englisch)
 markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro: Eine Demo-Site für den Rosey-CloudCannon Multilingual Connector für Astro.
+markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon: ""
 markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color:
   Es ist kalt, aber es ist schön. Werden Sie hart damit, werden Sie stark. Braun
   ist so eine schöne Farbe.
-markdown:testing-everything-still-works-post-tidy-up: Das Testen funktioniert nach dem **Aufräumen** *immer noch*.
 markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics:
   Man sagt, dass *alles* besser aussieht, wenn es eine ungerade Anzahl von
   Dingen gibt. Aber manchmal setze ich gerade Zahlen – nur um die Kritiker zu
   verärgern.
-markdown:this-content-and-it's-translations-are-editable-from-the-visual-editor-as-well-as-data-files-providing-an-easy-to-use-interface-for-non-technical-people-to-maintain-a-multilingual-site:
-  Dieser Inhalt und seine Übersetzungen können über den visuellen Editor
-  bearbeitet werden, ebenso wie Datendateien, die eine einfach zu bedienende
-  Oberfläche für nicht-technische Personen bieten, um eine mehrsprachige Website
-  zu pflegen.
 markdown:we're-changing-things: ""
 rosey-cloudcannon-connector: ""
 rss-feed: RSS-Feed
