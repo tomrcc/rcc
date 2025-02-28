@@ -3,10 +3,6 @@
 		"original": " Blog ",
 		"value": "Blog"
 	},
-	"rss-feed": {
-		"original": " RSS Feed ",
-		"value": "RSS-Feed"
-	},
 	"cloudcannon": {
 		"original": " CloudCannon ",
 		"value": "CloudCannon"
@@ -42,6 +38,10 @@
 	"rosey-cloudcannon-connector": {
 		"original": " Rosey - CloudCannon Connector ",
 		"value": " Rosey - CloudCannon Steckverbinder "
+	},
+	"rss-feed": {
+		"original": " RSS Feed ",
+		"value": "RSS-Feed"
 	},
 	"this-is-just-a-test": {
 		"original": " This is just a test. ",
