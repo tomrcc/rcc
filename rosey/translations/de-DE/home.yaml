@@ -8,7 +8,8 @@ _inputs:
       groups:
         - heading: Still to translate (de-DE)
           comment: Text to translate on []()
-          inputs: []
+          inputs:
+            - markdown:testing-everything-still-works-post-tidy-up
         - heading: Already translated (de-DE)
           comment: Text already translated on []()
           inputs:
@@ -21,7 +22,6 @@ _inputs:
             - markdown:that-is-when-you-can-experience-true-joy-when-you-have-no-fear-maybe-just-to-play-a-little-we'll-put-a-little-tree-here
             - markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics
             - markdown:this-content-and-it's-translations-are-editable-from-the-visual-editor-as-well-as-data-files-providing-an-easy-to-use-interface-for-non-technical-people-to-maintain-a-multilingual-site
-            - markdown:this-is-new-and-should-now-work
             - rosey-cloudcannon-multilingual-connector
             - rss-feed
   blog:
@@ -89,6 +89,26 @@ _inputs:
       icon: translate
       content: It's cold, but it's beautiful. Get tough with it, get strong. Brown is
         such a nice color.
+  markdown:testing-everything-still-works-post-tidy-up:
+    label: Testing everything still works post _tidy ...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      blockquote: true
+    comment: "[See on page](#:~:text=Testing%20everything%20still,post%20_tidy%20up_)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: Testing **everything** still works post _tidy up_.
   markdown:that-is-when-you-can-experience-true-joy-when-you-have-no-fear-maybe-just-to-play-a-little-we'll-put-a-little-tree-here:
     label: That is when you can experience true joy, ...
     hidden: false
@@ -153,21 +173,6 @@ _inputs:
       content: This content and it's translations are editable from the visual editor,
         as well as data files, providing an easy to use interface for
         non-technical people to maintain a multilingual site.
-  markdown:this-is-new-and-should-now-work:
-    label: This is new and should _now_ work.
-    hidden: false
-    type: markdown
-    options:
-      bold: true
-      format: p h1 h2 h3 h4
-      italic: true
-      link: true
-      undo: true
-      redo: true
-      removeformat: true
-      copyformatting: true
-      blockquote: true
-    comment: "[See on page](#:~:text=This%20is%20new,should%20_now_%20work)"
   rosey-cloudcannon-multilingual-connector:
     label: Rosey - CloudCannon Multilingual Connector
     hidden: false
@@ -189,6 +194,7 @@ markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro:
 markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color:
   Es ist kalt, aber es ist schön. Werden Sie hart damit, werden Sie stark. Braun
   ist so eine schöne Farbe.
+markdown:testing-everything-still-works-post-tidy-up: ""
 markdown:that-is-when-you-can-experience-true-joy-when-you-have-no-fear-maybe-just-to-play-a-little-we'll-put-a-little-tree-here:
   Das ist, wenn du **wahre** **Freude** erleben kannst, wenn du keine Angst
   hast. Vielleicht, nur um ein bisschen zu spielen, stellen wir hier einen
@@ -202,6 +208,5 @@ markdown:this-content-and-it's-translations-are-editable-from-the-visual-editor-
   bearbeitet werden, ebenso wie Datendateien, die eine einfach zu bedienende
   Oberfläche für nicht-technische Personen bieten, um eine mehrsprachige Website
   zu pflegen.
-markdown:this-is-new-and-should-now-work: Das ist **neu** und sollte *jetzt* **QA'd in the visual** funktionieren.
 rosey-cloudcannon-multilingual-connector: " Rosey - CloudCannon Mehrsprachiger Konnektor "
 rss-feed: RSS-Feed

@@ -7,21 +7,11 @@ import { generateRoseyId } from "../../../rosey/utils/helpers/component-helper.j
 interface Props {
   background_color: string;
   heading: {
-    heading_text: {
-      original: string;
-      es_ES_translation: string;
-      de_DE_translation: string;
-      fr_FR_translation: string;
-    };
+    heading_text: string;
     heading_gradient_color: string;
   };
   subheading: {
-    markdown_content: {
-      original: string;
-      es_ES_translation: string;
-      de_DE_translation: string;
-      fr_FR_translation: string;
-    };
+    markdown_content: string;
     color: string;
   };
   image: {
@@ -31,12 +21,7 @@ interface Props {
   buttons: [
     {
       _bookshop_name: string;
-      text: {
-        original: string;
-        es_ES_translation: string;
-        de_DE_translation: string;
-        fr_FR_translation: string;
-      };
+      text: string;
       icon: string;
       link: string;
       background_color?: string;
