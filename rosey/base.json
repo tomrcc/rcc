@@ -14,7 +14,7 @@
       "total": 5
     },
     "cloudcannon": {
-      "original": " [object Object] ",
+      "original": " CloudCannon ",
       "value": null,
       "pages": {
         "index.html": 1
@@ -22,7 +22,7 @@
       "total": 1
     },
     "github": {
-      "original": " [object Object] ",
+      "original": " GitHub ",
       "value": null,
       "pages": {
         "index.html": 1
@@ -30,7 +30,7 @@
       "total": 1
     },
     "keep-what-you-need-delete-the-rest": {
-      "original": " [object Object] ",
+      "original": " Keep what you need. Delete the rest. ",
       "value": null,
       "pages": {
         "index.html": 1
@@ -158,7 +158,7 @@
       "total": 1
     },
     "rosey-cloudcannon-multilingual-connector": {
-      "original": " [object Object] ",
+      "original": " Rosey - CloudCannon Multilingual Connector ",
       "value": null,
       "pages": {
         "index.html": 1

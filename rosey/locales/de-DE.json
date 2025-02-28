@@ -8,15 +8,15 @@
 		"value": "RSS-Feed"
 	},
 	"cloudcannon": {
-		"original": " [object Object] ",
+		"original": " CloudCannon ",
 		"value": "CloudCannon"
 	},
 	"github": {
-		"original": " [object Object] ",
+		"original": " GitHub ",
 		"value": "GitHub (Englisch)"
 	},
 	"keep-what-you-need-delete-the-rest": {
-		"original": " [object Object] ",
+		"original": " Keep what you need. Delete the rest. ",
 		"value": "Behalten Sie, was Sie brauchen Löschen Sie den Rest"
 	},
 	"markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro": {
@@ -44,7 +44,7 @@
 		"value": "<p>Das ist <strong>neu</strong> und sollte <em>jetzt</em> <strong>QA'd in the visual</strong> funktionieren.</p>\n"
 	},
 	"rosey-cloudcannon-multilingual-connector": {
-		"original": " [object Object] ",
+		"original": " Rosey - CloudCannon Multilingual Connector ",
 		"value": " Rosey - CloudCannon Mehrsprachiger Konnektor "
 	},
 	"markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way": {
