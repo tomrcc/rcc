@@ -10,6 +10,8 @@
   - Using the id functions
   - How to separate unwanted duplicate keys eg. same value on separate pages
   - How long form content works with block level element splitting (including snippets)
+  - Using smartling
+  - Debugging locally (include setting up local .env and gitignoring it)
 - Chase up CC update for mistaken 'Awaiting page translations'
 - Record a new intro youtube video
 - npm audit
