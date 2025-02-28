@@ -167,7 +167,6 @@ async function generateTranslationFilesForLocale(locale, configData) {
           inputKey,
           page,
           inputTranslationObj,
-          oldLocaleData,
           baseURL
         );
 
@@ -238,17 +237,9 @@ function formatMarkdownForComments(markdown) {
   );
 }
 
-function getInputConfig(
-  inputKey,
-  page,
-  inputTranslationObj,
-  oldLocaleData,
-  baseURL
-) {
+function getInputConfig(inputKey, page, inputTranslationObj, baseURL) {
   const untranslatedPhrase = inputTranslationObj.original.trim();
-  // Turn into markdown
   const untranslatedPhraseMarkdown = nhm.translate(untranslatedPhrase);
-
   const originalPhraseTidiedForComment = formatMarkdownForComments(
     untranslatedPhraseMarkdown
   );

@@ -31,23 +31,23 @@ _inputs:
     options: {}
     comment: "[See on page](#:~:text=Blog)"
   cloudcannon:
-    label: "[object Object]"
+    label: CloudCannon
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](#:~:text=%5Bobject%20Object%5D)"
+    comment: "[See on page](#:~:text=CloudCannon)"
   github:
-    label: "[object Object]"
+    label: GitHub
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](#:~:text=%5Bobject%20Object%5D)"
+    comment: "[See on page](#:~:text=GitHub)"
   keep-what-you-need-delete-the-rest:
-    label: "[object Object]"
+    label: Keep what you need. Delete the rest.
     hidden: false
-    type: text
+    type: textarea
     options: {}
-    comment: "[See on page](#:~:text=%5Bobject%20Object%5D)"
+    comment: "[See on page](#:~:text=Keep%20what%20you,Delete%20the%20rest)"
   markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro:
     label: A demo site for the Rosey-CloudCannon Mult...
     hidden: false
@@ -169,11 +169,12 @@ _inputs:
       blockquote: true
     comment: "[See on page](#:~:text=This%20is%20new,should%20_now_%20work)"
   rosey-cloudcannon-multilingual-connector:
-    label: "[object Object]"
+    label: Rosey - CloudCannon Multilingual Connector
     hidden: false
-    type: text
+    type: textarea
     options: {}
-    comment: "[See on page](#:~:text=%5Bobject%20Object%5D)"
+    comment: "[See on
+      page](#:~:text=Rosey%20-%20CloudCannon%20Multilingual%20Connector)"
   rss-feed:
     label: RSS Feed
     hidden: false

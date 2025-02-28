@@ -1,6 +1,9 @@
 import slugify from "slugify";
 
 function formatAndSlugifyMarkdownText(markdownText) {
+  if (!markdownText) {
+    return "";
+  }
   const lowerCaseText = markdownText.toLowerCase();
   const formattedLinks = lowerCaseText.replaceAll(
     /(?:__[*#])|\[(.*?)\]\(.*?\)/gm,

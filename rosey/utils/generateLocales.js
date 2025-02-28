@@ -82,8 +82,7 @@ async function generateLocale(locale, configData) {
         oldLocaleData,
         oldURLsLocaleData,
         baseFileData,
-        baseURLFileData,
-        contentPagesTranslationConfig
+        baseURLFileData
       );
 
       localeDataEntries[filename] = response;
@@ -104,14 +103,12 @@ async function generateLocale(locale, configData) {
 
       Object.keys(data).forEach((key) => {
         if (!localeData[key] || data[key].isNewTranslation) {
-          const isKeyStaticOrMarkdown =
-            key.slice(0, 10).includes("static:") ||
-            key.slice(0, 10).includes("markdown:");
+          const isKeyMarkdown = key.slice(0, 10).includes("markdown:");
 
           localeData[key] = {
             original: data[key].original,
             value:
-              isKeyStaticOrMarkdown && data[key].isNewTranslation
+              isKeyMarkdown && data[key].isNewTranslation
                 ? md.render(data[key].value)
                 : data[key].value,
           };
