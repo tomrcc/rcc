@@ -18,8 +18,8 @@ content_blocks:
   - _bookshop_name: hero
     background_color: '#ffffff'
     heading:
-      heading_text: Rosey - CloudCannon Multilingual Connector
-      heading_gradient_color: '#F7B2AD'
+      heading_text: Rosey - CloudCannon Connector
+      heading_gradient_color: '#034AD8'
     subheading:
       markdown_content: >-
         A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.
