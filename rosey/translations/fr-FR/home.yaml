@@ -2,46 +2,53 @@ urlTranslation: index.html
 _inputs:
   $:
     type: object
-    comment: "[See ](https://steaming-shoelace.cloudvent.net/)"
+    comment: '[See ](https://steaming-shoelace.cloudvent.net/)'
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (fr-FR)
           comment: Text to translate on [](https://steaming-shoelace.cloudvent.net/)
           inputs:
-            - markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon
+            - >-
+              markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon
             - markdown:we're-changing-things
             - rosey-cloudcannon-connector
             - this-is-just-a-test
         - heading: Already translated (fr-FR)
-          comment: Text already translated on [](https://steaming-shoelace.cloudvent.net/)
+          comment: >-
+            Text already translated on
+            [](https://steaming-shoelace.cloudvent.net/)
           inputs:
             - blog
             - cloudcannon
             - github
-            - markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro
-            - markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color
-            - markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics
+            - >-
+              markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro
+            - >-
+              markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color
+            - >-
+              markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics
             - rss-feed
   blog:
     label: Blog
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](https://steaming-shoelace.cloudvent.net/#:~:text=Blog)"
+    comment: '[See on page](https://steaming-shoelace.cloudvent.net/#:~:text=Blog)'
   cloudcannon:
     label: CloudCannon
     hidden: false
     type: text
     options: {}
-    comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=CloudCannon)"
+    comment: >-
+      [See on
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=CloudCannon)
   github:
     label: GitHub
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](https://steaming-shoelace.cloudvent.net/#:~:text=GitHub)"
+    comment: '[See on page](https://steaming-shoelace.cloudvent.net/#:~:text=GitHub)'
   markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro:
     label: A demo site for the Rosey-CloudCannon Mult...
     hidden: false
@@ -56,9 +63,9 @@ _inputs:
       removeformat: true
       copyformatting: true
       blockquote: true
-    comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=A%20demo%20site,Co\
-      nnector%20for%20Astro)"
+    comment: >-
+      [See on
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=A%20demo%20site,Connector%20for%20Astro)
     context:
       open: false
       title: Untranslated Text
@@ -78,9 +85,9 @@ _inputs:
       removeformat: true
       copyformatting: true
       blockquote: true
-    comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=Control%20translat\
-      ions%20via,interface%20in%20CloudCannon)"
+    comment: >-
+      [See on
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=Control%20translations%20via,interface%20in%20CloudCannon)
     context:
       open: false
       title: Untranslated Text
@@ -100,14 +107,15 @@ _inputs:
       removeformat: true
       copyformatting: true
       blockquote: true
-    comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=It's%20cold,a%20ni\
-      ce%20color)"
+    comment: >-
+      [See on
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=It's%20cold,a%20nice%20color)
     context:
       open: false
       title: Untranslated Text
       icon: translate
-      content: It's cold, but it's beautiful. Get tough with it, get strong. Brown is
+      content: >-
+        It's cold, but it's beautiful. Get tough with it, get strong. Brown is
         such a nice color.
   markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics:
     label: They say _everything_ looks better with od...
@@ -123,14 +131,15 @@ _inputs:
       removeformat: true
       copyformatting: true
       blockquote: true
-    comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=They%20say%20_ever\
-      ything_,upset%20the%20critics)"
+    comment: >-
+      [See on
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=They%20say%20_everything_,upset%20the%20critics)
     context:
       open: false
       title: Untranslated Text
       icon: translate
-      content: They say _everything_ looks better with odd numbers of things. But
+      content: >-
+        They say _everything_ looks better with odd numbers of things. But
         sometimes I put even numbers—just to upset the critics.
   markdown:we're-changing-things:
     label: We're _changing_ things.
@@ -146,46 +155,45 @@ _inputs:
       removeformat: true
       copyformatting: true
       blockquote: true
-    comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=We're%20_changing_\
-      %20things.)"
+    comment: >-
+      [See on
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=We're%20_changing_%20things.)
   rosey-cloudcannon-connector:
     label: Rosey - CloudCannon Connector
     hidden: false
     type: textarea
     options: {}
-    comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=Rosey%20-%20CloudC\
-      annon%20Connector)"
+    comment: >-
+      [See on
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=Rosey%20-%20CloudCannon%20Connector)
   rss-feed:
     label: RSS Feed
     hidden: false
     type: text
     options: {}
-    comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=RSS%20Feed)"
+    comment: '[See on page](https://steaming-shoelace.cloudvent.net/#:~:text=RSS%20Feed)'
   this-is-just-a-test:
     label: This is just a test.
     hidden: false
     type: textarea
     options: {}
-    comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=This%20is%20just%2\
-      0a%20test.)"
+    comment: >-
+      [See on
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=This%20is%20just%20a%20test.)
 blog: Blog
 cloudcannon: CloudCannon
 github: GitHub
-markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro:
+markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro: >-
   Un site de démonstration pour le connecteur multilingue Rosey-CloudCannon pour
   Astro.
-markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon: ""
-markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color:
+markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon: Translated in the data editor.
+markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color: >-
   Il fait froid, mais c'est beau. Il faut s'endurcir, devenir fort. Le marron
   est une couleur très agréable.
-markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics:
+markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics: >-
   On dit que *tout* est plus beau avec un nombre impair de choses. Mais il
   m'arrive de mettre des nombres pairs, juste pour contrarier les critiques.
-markdown:we're-changing-things: ""
-rosey-cloudcannon-connector: ""
+markdown:we're-changing-things: ''
+rosey-cloudcannon-connector: ''
 rss-feed: Flux RSS
-this-is-just-a-test: ""
+this-is-just-a-test: ''
