@@ -2,15 +2,15 @@ urlTranslation: index.html
 _inputs:
   $:
     type: object
-    comment: "[See ]()"
+    comment: "[See ](https://steaming-shoelace.cloudvent.net/)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (de-DE)
-          comment: Text to translate on []()
+          comment: Text to translate on [](https://steaming-shoelace.cloudvent.net/)
           inputs: []
         - heading: Already translated (de-DE)
-          comment: Text already translated on []()
+          comment: Text already translated on [](https://steaming-shoelace.cloudvent.net/)
           inputs:
             - blog
             - cloudcannon
@@ -29,25 +29,28 @@ _inputs:
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](#:~:text=Blog)"
+    comment: "[See on page](https://steaming-shoelace.cloudvent.net/#:~:text=Blog)"
   cloudcannon:
     label: CloudCannon
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](#:~:text=CloudCannon)"
+    comment: "[See on
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=CloudCannon)"
   github:
     label: GitHub
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](#:~:text=GitHub)"
+    comment: "[See on page](https://steaming-shoelace.cloudvent.net/#:~:text=GitHub)"
   keep-what-you-need-delete-the-rest:
     label: Keep what you need. Delete the rest.
     hidden: false
     type: textarea
     options: {}
-    comment: "[See on page](#:~:text=Keep%20what%20you,Delete%20the%20rest)"
+    comment: "[See on
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=Keep%20what%20you,\
+      Delete%20the%20rest)"
   markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro:
     label: A demo site for the Rosey-CloudCannon Mult...
     hidden: false
@@ -62,7 +65,9 @@ _inputs:
       removeformat: true
       copyformatting: true
       blockquote: true
-    comment: "[See on page](#:~:text=A%20demo%20site,Connector%20for%20Astro)"
+    comment: "[See on
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=A%20demo%20site,Co\
+      nnector%20for%20Astro)"
     context:
       open: false
       title: Untranslated Text
@@ -82,7 +87,9 @@ _inputs:
       removeformat: true
       copyformatting: true
       blockquote: true
-    comment: "[See on page](#:~:text=It's%20cold,a%20nice%20color)"
+    comment: "[See on
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=It's%20cold,a%20ni\
+      ce%20color)"
     context:
       open: false
       title: Untranslated Text
@@ -103,7 +110,9 @@ _inputs:
       removeformat: true
       copyformatting: true
       blockquote: true
-    comment: "[See on page](#:~:text=Testing%20everything%20still,post%20_tidy%20up_)"
+    comment: "[See on
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=Testing%20everythi\
+      ng%20still,post%20_tidy%20up_)"
     context:
       open: false
       title: Untranslated Text
@@ -123,7 +132,9 @@ _inputs:
       removeformat: true
       copyformatting: true
       blockquote: true
-    comment: "[See on page](#:~:text=That%20is%20when,little%20tree%20here)"
+    comment: "[See on
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=That%20is%20when,l\
+      ittle%20tree%20here)"
     context:
       open: false
       title: Untranslated Text
@@ -144,7 +155,9 @@ _inputs:
       removeformat: true
       copyformatting: true
       blockquote: true
-    comment: "[See on page](#:~:text=They%20say%20_everything_,upset%20the%20critics)"
+    comment: "[See on
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=They%20say%20_ever\
+      ything_,upset%20the%20critics)"
     context:
       open: false
       title: Untranslated Text
@@ -165,7 +178,9 @@ _inputs:
       removeformat: true
       copyformatting: true
       blockquote: true
-    comment: "[See on page](#:~:text=This%20content%20and,a%20multilingual%20site)"
+    comment: "[See on
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=This%20content%20a\
+      nd,a%20multilingual%20site)"
     context:
       open: false
       title: Untranslated Text
@@ -179,13 +194,15 @@ _inputs:
     type: textarea
     options: {}
     comment: "[See on
-      page](#:~:text=Rosey%20-%20CloudCannon%20Multilingual%20Connector)"
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=Rosey%20-%20CloudC\
+      annon%20Multilingual%20Connector)"
   rss-feed:
     label: RSS Feed
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](#:~:text=RSS%20Feed)"
+    comment: "[See on
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=RSS%20Feed)"
 blog: Blog
 cloudcannon: CloudCannon
 github: GitHub (Englisch)
