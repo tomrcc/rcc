@@ -27,6 +27,10 @@
 		"original": "It's cold, but it's beautiful. Get tough with it, get strong. Brown is such a nice color.",
 		"value": "<p>Es ist kalt, aber es ist schön. Werden Sie hart damit, werden Sie stark. Braun ist so eine schöne Farbe.</p>\n"
 	},
+	"markdown:testing-everything-still-works-post-tidy-up": {
+		"original": "Testing <strong>everything</strong> still works post <em>tidy up</em>.",
+		"value": "<p>Das Testen funktioniert nach dem <strong>Aufräumen</strong> <em>immer noch</em>.</p>\n"
+	},
 	"markdown:that-is-when-you-can-experience-true-joy-when-you-have-no-fear-maybe-just-to-play-a-little-we'll-put-a-little-tree-here": {
 		"original": "That is when you can experience <strong>true</strong> <strong>joy</strong>, when you have no fear. Maybe, just to play a little, we'll put a little tree here.",
 		"value": "<p>Das ist, wenn du <strong>wahre</strong> <strong>Freude</strong> erleben kannst, wenn du keine Angst hast. Vielleicht, nur um ein bisschen zu spielen, stellen wir hier einen kleinen Baum auf.</p>\n"
@@ -38,10 +42,6 @@
 	"markdown:this-content-and-it's-translations-are-editable-from-the-visual-editor-as-well-as-data-files-providing-an-easy-to-use-interface-for-non-technical-people-to-maintain-a-multilingual-site": {
 		"original": "This content and it's translations are editable from the visual editor, as well as data files, providing an easy to use interface for non-technical people to maintain a multilingual site.",
 		"value": "<p>Dieser Inhalt und seine Übersetzungen können über den visuellen Editor bearbeitet werden, ebenso wie Datendateien, die eine einfach zu bedienende Oberfläche für nicht-technische Personen bieten, um eine mehrsprachige Website zu pflegen.</p>\n"
-	},
-	"markdown:this-is-new-and-should-now-work": {
-		"original": "This is <strong>new</strong> and should <em>now</em> work.",
-		"value": "<p>Das ist <strong>neu</strong> und sollte <em>jetzt</em> <strong>QA'd in the visual</strong> funktionieren.</p>\n"
 	},
 	"rosey-cloudcannon-multilingual-connector": {
 		"original": " Rosey - CloudCannon Multilingual Connector ",

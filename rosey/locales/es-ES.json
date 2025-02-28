@@ -27,6 +27,10 @@
 		"original": "It's cold, but it's beautiful. Get tough with it, get strong. Brown is such a nice color.",
 		"value": "<p>Hace frío, pero es hermoso. Sé duro con eso, hazte fuerte. El marrón es un color muy bonito.</p>\n"
 	},
+	"markdown:testing-everything-still-works-post-tidy-up": {
+		"original": "Testing <strong>everything</strong> still works post <em>tidy up</em>.",
+		"value": "Testing <strong>everything</strong> still works post <em>tidy up</em>."
+	},
 	"markdown:that-is-when-you-can-experience-true-joy-when-you-have-no-fear-maybe-just-to-play-a-little-we'll-put-a-little-tree-here": {
 		"original": "That is when you can experience <strong>true</strong> <strong>joy</strong>, when you have no fear. Maybe, just to play a little, we'll put a little tree here.",
 		"value": "<p>Ahí es cuando puedes experimentar <strong>la verdadera</strong> <strong>alegría</strong>, cuando no tienes miedo. Quizás, solo para jugar un poco, pongamos un arbolito aquí.</p>\n"
@@ -38,10 +42,6 @@
 	"markdown:this-content-and-it's-translations-are-editable-from-the-visual-editor-as-well-as-data-files-providing-an-easy-to-use-interface-for-non-technical-people-to-maintain-a-multilingual-site": {
 		"original": "This content and it's translations are editable from the visual editor, as well as data files, providing an easy to use interface for non-technical people to maintain a multilingual site.",
 		"value": "<p>Este contenido y sus traducciones son editables desde el editor visual, así como los archivos de datos, proporcionando una interfaz fácil de usar para que las personas sin conocimientos técnicos mantengan un sitio multilingüe.</p>\n"
-	},
-	"markdown:this-is-new-and-should-now-work": {
-		"original": "This is <strong>new</strong> and should <em>now</em> work.",
-		"value": "<p>Esto es <strong>nuevo</strong> y <em>ahora</em> debería funcionar. QA'd in the data file.</p>\n"
 	},
 	"rosey-cloudcannon-multilingual-connector": {
 		"original": " Rosey - CloudCannon Multilingual Connector ",
