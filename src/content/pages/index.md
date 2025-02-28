@@ -52,7 +52,7 @@ content_blocks:
   - _bookshop_name: left-right
     background_color: '#c8d5b9'
     heading:
-      heading_text: Keep what you need. Delete the rest.
+      heading_text: This is just a test.
       color: '#393939'
     text:
       markdown_content: >-
@@ -60,8 +60,7 @@ content_blocks:
         sometimes I put even numbers—just to upset the critics.
 
 
-        That is when you can experience **true** **joy**, when you have no fear.
-        Maybe, just to play a little, we'll put a little tree here.
+        We're ***changing*** things.
 
 
         It's cold, but it's beautiful. Get tough with it, get strong. Brown is
