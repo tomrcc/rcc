@@ -47,49 +47,7 @@ dotenv.config();
   const pingInterval = configData.smartling.ping_interval;
   const pingMaximum = configData.smartling.ping_maximum;
   const pingsToWaitForAuth = configData.smartling.pings_to_wait_for_auth;
-
-  // Loop through all pages frontmatter so we can get the translations obj
-  // Check if the page has any translate_locale set to true and if it does add it to pagesToTranslate
-  const excludedContentFiles = configData.visual_editing.excluded_files;
-  const contentDirectory = configData.visual_editing.content_directory;
   const locales = configData.locales;
-
-  const contentDirectoryFilesUnfiltered = await fs.promises.readdir(
-    contentDirectory,
-    {
-      recursive: true,
-    }
-  );
-  const pagesToTranslate = ["404.html"];
-
-  await Promise.all(
-    contentDirectoryFilesUnfiltered.map(async (file) => {
-      const filePath = path.join("src", "content", file);
-      if (
-        !(await isDirectory(filePath)) &&
-        !excludedContentFiles.includes(file)
-      ) {
-        // Check pages frontmatter to see if we should translate
-        const fileRawData = await readFileWithFallback(filePath);
-        const fileFrontmatter = YAML.parse(fileRawData.split("---")[1]);
-        const pageTranslationsConfig = fileFrontmatter.translations ?? {};
-        const pageTranslationsConfigKeys = Object.keys(pageTranslationsConfig);
-        // Check frontmatter translations obj
-        // Check if any of the one's that aren't selected translation are true
-        // If they are, push the page to the pages to translate array
-        let pageHasATranslationEnabled = false;
-        pageTranslationsConfigKeys.forEach((key) => {
-          const translationConfigValue = pageTranslationsConfig[key];
-          if (translationConfigValue === true) {
-            pageHasATranslationEnabled = true;
-          }
-        });
-        if (pageHasATranslationEnabled) {
-          pagesToTranslate.push(file);
-        }
-      }
-    })
-  );
 
   // Create factory for building API clients.
   const apiBuilder = new SmartlingApiClientBuilder()
@@ -104,8 +62,7 @@ dotenv.config();
   // Create outgoing translations file
   await generateOutgoingTranslationFile(
     roseyBaseFilePath,
-    outgoingTranslationsFilePath,
-    pagesToTranslate
+    outgoingTranslationsFilePath
   );
 
   if (!smartlingTranslateEnabled || smartlingTranslateEnabled === "false") {
@@ -373,11 +330,7 @@ async function fetchSmartlingData(url, authToken) {
   }
 }
 
-async function generateOutgoingTranslationFile(
-  baseFilePath,
-  outgoingFilePath,
-  pagesToTranslate
-) {
+async function generateOutgoingTranslationFile(baseFilePath, outgoingFilePath) {
   const inputFileData = await readJsonFromFile(baseFilePath);
   const existingSmartlingTranslationsFiles = await fs.promises.readdir(
     "./rosey/smartling-translations"
@@ -396,43 +349,14 @@ async function generateOutgoingTranslationFile(
   // Get all the keys in the base.json
   const inputFileKeyData = inputFileData.keys;
   const inputKeys = Object.keys(inputFileKeyData);
-  // Loop through all pages frontmatter so we can get the translations obj
-  // Check if the page has any translate_locale set to true and if it does add it to pagesToTranslate
-  // When we're looping through the keys check their pages
-  // If any of their pages are included in pagesToTranslate, add the key to translationObject like normal
-  // If none of their pages are included in pagesToTranslate, don't add the key to translationObject
-  // Add a check in the main function where if this object is empty, don't proceed with the smartling call
-  // // Otherwise we risk the situation where there is a new translation, but since it's page is excluded
-  // // we can't write it to the translationObject and would risk sending away nothing to smartling and having to wait
-
   const translationObject = {};
-  const pagesToTranslateHtmlEquivalent = pagesToTranslate.map((page) => {
-    return page
-      .replace("pages/", "")
-      .replace("index.md", "index.html")
-      .replace(".mdx", "/index.html")
-      .replace(".md", "/index.html");
-  });
 
   // Looping through base.json keys
   inputKeys.forEach((key) => {
     // If any of their pages are included in pagesToTranslate, add the key to translationObject like normal
     // If none of their pages are included in pagesToTranslate, don't add the key to translationObject
-    const keyData = inputFileKeyData[key];
-    const keyPageData = keyData.pages;
-    const keyPages = Object.keys(keyPageData);
-    let translationsPageAllowed = false;
-    keyPages.map((page) => {
-      if (pagesToTranslateHtmlEquivalent.includes(page)) {
-        translationsPageAllowed = true;
-      }
-    });
-
     // If we don't already have the translation, add it to the outgoing translations obj
-    if (
-      !existingSmartlingTranslationKeys.includes(key) &&
-      translationsPageAllowed
-    ) {
+    if (!existingSmartlingTranslationKeys.includes(key)) {
       const originalPhrase = inputFileData.keys[key].original;
       translationObject[key] = originalPhrase;
     }
