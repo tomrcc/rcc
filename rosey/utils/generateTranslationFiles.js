@@ -230,7 +230,7 @@ function formatMarkdownForComments(markdown) {
       // Remove all md links
       .replaceAll(/(?:__[*#])|\[(.*?)\]\(.*?\)/gm, /$1/)
       // Remove special chars
-      .replaceAll(/[&\/\\#+()$~%"*<>{}]/gm, "")
+      .replaceAll(/[&\/\\#+()$~%"*<>{}_]/gm, "")
   );
 }
 
@@ -337,14 +337,14 @@ function generateLocationString(originalPhrase, page, baseURL) {
 
   const startHighlightArrayWithoutPunctuation = [];
   const endHighlightArrayWithoutPunctuation = [];
+  const regexToMatch = /[&#,+()$~%.":*?<>{}_]/gm;
 
   for (let i = 0; i < startHighlightArrayWithPunctuation.length; i++) {
     const word = startHighlightArrayWithPunctuation[i];
-    const regexToMatch = /[&#,+()$~%.":*?<>{}]/gm;
     const foundMatches = word.match(regexToMatch);
     if (foundMatches && foundMatches.length > 0) {
       startHighlightArrayWithoutPunctuation.push(
-        word.replaceAll(/[&#,+()$~%.":*?<>{}]/gm, "")
+        word.replaceAll(regexToMatch, "")
       );
       break;
     } else {
@@ -354,11 +354,10 @@ function generateLocationString(originalPhrase, page, baseURL) {
 
   for (let j = 0; j < endHighlightArrayWithPunctuation.length; j++) {
     const word = endHighlightArrayWithPunctuation[j];
-    const regexToMatch = /[&#,+()$~%.":*?<>{}]/gm;
     const foundMatches = word.match(regexToMatch);
     if (foundMatches && foundMatches.length > 0) {
       endHighlightArrayWithoutPunctuation.push(
-        word.replaceAll(/[&#,+()$~%.":*?<>{}]/gm, "")
+        word.replaceAll(regexToMatch, "")
       );
       break;
     } else {

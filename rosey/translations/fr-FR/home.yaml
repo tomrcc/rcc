@@ -134,7 +134,7 @@ _inputs:
       content: It's cold, but it's beautiful. Get tough with it, get strong. Brown is
         such a nice color.
   markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics:
-    label: They say _everything_ looks better with od...
+    label: They say everything looks better with odd ...
     hidden: false
     type: markdown
     options:
@@ -148,8 +148,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=They%20say%20_ever\
-      ything_,upset%20the%20critics)"
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=They%20say%20every\
+      thing,upset%20the%20critics)"
     context:
       open: false
       title: Untranslated Text
@@ -157,7 +157,7 @@ _inputs:
       content: They say _everything_ looks better with odd numbers of things. But
         sometimes I put even numbers—just to upset the critics.
   markdown:we're-changing-things:
-    label: We're _changing_ things.
+    label: We're changing things.
     hidden: false
     type: markdown
     options:
@@ -171,8 +171,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=We're%20_changing_\
-      %20things.)"
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=We're%20changing%2\
+      0things.)"
   rosey-cloudcannon-connector:
     label: Rosey - CloudCannon Connector
     hidden: false

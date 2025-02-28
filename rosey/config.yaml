@@ -1,5 +1,4 @@
 locales:
-  - es-ES
   - de-DE
   - fr-FR
 base_url: https://steaming-shoelace.cloudvent.net/
@@ -18,6 +17,7 @@ smartling:
   incoming_translations_dir: ./rosey/smartling-translations/
   outgoing_translations_file_path: ./rosey/outgoing-smartling-translations.json
   outgoing_translation_file_uri: /rosey/translations/
+
 _inputs:
   locales:
     type: array
