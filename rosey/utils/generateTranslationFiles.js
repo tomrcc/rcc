@@ -7,7 +7,6 @@ import {
   isDirectory,
   readFileWithFallback,
   readJsonFromFile,
-  readConfigFile,
 } from "./helpers/file-helper.js";
 
 const nhm = new NodeHtmlMarkdown(
@@ -17,9 +16,7 @@ const nhm = new NodeHtmlMarkdown(
 );
 dotenv.config();
 
-(async () => {
-  const configData = await readConfigFile("./rosey/config.yaml");
-
+export async function generateTranslationFiles(configData) {
   const locales = configData.locales;
   // Loop through locales
   for (let i = 0; i < locales.length; i++) {
@@ -29,7 +26,7 @@ dotenv.config();
       console.error(`❌❌ Encountered an error translating ${locale}:`, err);
     });
   }
-})();
+}
 
 async function generateTranslationFilesForLocale(locale, configData) {
   // Get the Rosey generated data

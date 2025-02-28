@@ -9,20 +9,19 @@ _inputs:
         - heading: Still to translate (fr-FR)
           comment: Text to translate on [](https://steaming-shoelace.cloudvent.net/)
           inputs:
-            - markdown:testing-everything-still-works-post-tidy-up
+            - markdown:we're-changing-things
+            - rosey-cloudcannon-connector
+            - this-is-just-a-test
         - heading: Already translated (fr-FR)
           comment: Text already translated on [](https://steaming-shoelace.cloudvent.net/)
           inputs:
             - blog
             - cloudcannon
             - github
-            - keep-what-you-need-delete-the-rest
             - markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro
+            - markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon
             - markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color
-            - markdown:that-is-when-you-can-experience-true-joy-when-you-have-no-fear-maybe-just-to-play-a-little-we'll-put-a-little-tree-here
             - markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics
-            - markdown:this-content-and-it's-translations-are-editable-from-the-visual-editor-as-well-as-data-files-providing-an-easy-to-use-interface-for-non-technical-people-to-maintain-a-multilingual-site
-            - rosey-cloudcannon-multilingual-connector
             - rss-feed
   blog:
     label: Blog
@@ -43,14 +42,6 @@ _inputs:
     type: text
     options: {}
     comment: "[See on page](https://steaming-shoelace.cloudvent.net/#:~:text=GitHub)"
-  keep-what-you-need-delete-the-rest:
-    label: Keep what you need. Delete the rest.
-    hidden: false
-    type: textarea
-    options: {}
-    comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=Keep%20what%20you,\
-      Delete%20the%20rest)"
   markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro:
     label: A demo site for the Rosey-CloudCannon Mult...
     hidden: false
@@ -73,6 +64,28 @@ _inputs:
       title: Untranslated Text
       icon: translate
       content: A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.
+  markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon:
+    label: Control translations via a user friendly i...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      blockquote: true
+    comment: "[See on
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=Control%20translat\
+      ions%20via,interface%20in%20CloudCannon)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: Control translations via a user friendly interface in CloudCannon.
   markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color:
     label: It's cold, but it's beautiful. Get tough w...
     hidden: false
@@ -96,51 +109,6 @@ _inputs:
       icon: translate
       content: It's cold, but it's beautiful. Get tough with it, get strong. Brown is
         such a nice color.
-  markdown:testing-everything-still-works-post-tidy-up:
-    label: Testing everything still works post _tidy ...
-    hidden: false
-    type: markdown
-    options:
-      bold: true
-      format: p h1 h2 h3 h4
-      italic: true
-      link: true
-      undo: true
-      redo: true
-      removeformat: true
-      copyformatting: true
-      blockquote: true
-    comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=Testing%20everythi\
-      ng%20still,post%20_tidy%20up_)"
-    context:
-      open: false
-      title: Untranslated Text
-      icon: translate
-      content: Testing **everything** still works post _tidy up_.
-  markdown:that-is-when-you-can-experience-true-joy-when-you-have-no-fear-maybe-just-to-play-a-little-we'll-put-a-little-tree-here:
-    label: That is when you can experience true joy, ...
-    hidden: false
-    type: markdown
-    options:
-      bold: true
-      format: p h1 h2 h3 h4
-      italic: true
-      link: true
-      undo: true
-      redo: true
-      removeformat: true
-      copyformatting: true
-      blockquote: true
-    comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=That%20is%20when,l\
-      ittle%20tree%20here)"
-    context:
-      open: false
-      title: Untranslated Text
-      icon: translate
-      content: That is when you can experience **true** **joy**, when you have no
-        fear. Maybe, just to play a little, we'll put a little tree here.
   markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics:
     label: They say _everything_ looks better with od...
     hidden: false
@@ -164,8 +132,8 @@ _inputs:
       icon: translate
       content: They say _everything_ looks better with odd numbers of things. But
         sometimes I put even numbers—just to upset the critics.
-  markdown:this-content-and-it's-translations-are-editable-from-the-visual-editor-as-well-as-data-files-providing-an-easy-to-use-interface-for-non-technical-people-to-maintain-a-multilingual-site:
-    label: This content and it's translations are edi...
+  markdown:we're-changing-things:
+    label: We're _changing_ things.
     hidden: false
     type: markdown
     options:
@@ -179,23 +147,16 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=This%20content%20a\
-      nd,a%20multilingual%20site)"
-    context:
-      open: false
-      title: Untranslated Text
-      icon: translate
-      content: This content and it's translations are editable from the visual editor,
-        as well as data files, providing an easy to use interface for
-        non-technical people to maintain a multilingual site.
-  rosey-cloudcannon-multilingual-connector:
-    label: Rosey - CloudCannon Multilingual Connector
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=We're%20_changing_\
+      %20things.)"
+  rosey-cloudcannon-connector:
+    label: Rosey - CloudCannon Connector
     hidden: false
     type: textarea
     options: {}
     comment: "[See on
       page](https://steaming-shoelace.cloudvent.net/#:~:text=Rosey%20-%20CloudC\
-      annon%20Multilingual%20Connector)"
+      annon%20Connector)"
   rss-feed:
     label: RSS Feed
     hidden: false
@@ -203,27 +164,28 @@ _inputs:
     options: {}
     comment: "[See on
       page](https://steaming-shoelace.cloudvent.net/#:~:text=RSS%20Feed)"
+  this-is-just-a-test:
+    label: This is just a test.
+    hidden: false
+    type: textarea
+    options: {}
+    comment: "[See on
+      page](https://steaming-shoelace.cloudvent.net/#:~:text=This%20is%20just%2\
+      0a%20test.)"
 blog: Blog
 cloudcannon: CloudCannon
 github: GitHub
-keep-what-you-need-delete-the-rest: Gardez ce dont vous avez besoin Supprimez le reste
 markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro:
   Un site de démonstration pour le connecteur multilingue Rosey-CloudCannon pour
   Astro.
+markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon: Translated in the data editor.
 markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color:
   Il fait froid, mais c'est beau. Il faut s'endurcir, devenir fort. Le marron
   est une couleur très agréable.
-markdown:testing-everything-still-works-post-tidy-up: ""
-markdown:that-is-when-you-can-experience-true-joy-when-you-have-no-fear-maybe-just-to-play-a-little-we'll-put-a-little-tree-here:
-  C'est alors que l'on peut connaître la **vraie** **joie**, quand on n'a pas
-  peur. Peut-être que, pour jouer un peu, nous mettrons un petit arbre ici.
 markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics:
   On dit que *tout* est plus beau avec un nombre impair de choses. Mais il
   m'arrive de mettre des nombres pairs, juste pour contrarier les critiques.
-markdown:this-content-and-it's-translations-are-editable-from-the-visual-editor-as-well-as-data-files-providing-an-easy-to-use-interface-for-non-technical-people-to-maintain-a-multilingual-site:
-  Ce contenu et ses traductions sont modifiables à partir de l'éditeur visuel,
-  de même que les fichiers de données, ce qui constitue une interface facile à
-  utiliser pour les personnes non spécialisées dans la gestion d'un site
-  multilingue.
-rosey-cloudcannon-multilingual-connector: " Rosey - Connecteur multilingue CloudCannon "
+markdown:we're-changing-things: ""
+rosey-cloudcannon-connector: ""
 rss-feed: Flux RSS
+this-is-just-a-test: ""

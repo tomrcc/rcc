@@ -29,14 +29,6 @@
       },
       "total": 1
     },
-    "keep-what-you-need-delete-the-rest": {
-      "original": " Keep what you need. Delete the rest. ",
-      "value": null,
-      "pages": {
-        "index.html": 1
-      },
-      "total": 1
-    },
     "markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro": {
       "original": "A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.",
       "value": null,
@@ -66,6 +58,14 @@
       "value": null,
       "pages": {
         "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon": {
+      "original": "Control translations via a user friendly interface in CloudCannon.",
+      "value": null,
+      "pages": {
+        "index.html": 1
       },
       "total": 1
     },
@@ -101,32 +101,8 @@
       },
       "total": 1
     },
-    "markdown:testing-everything-still-works-post-tidy-up": {
-      "original": "Testing <strong>everything</strong> still works post <em>tidy up</em>.",
-      "value": null,
-      "pages": {
-        "index.html": 1
-      },
-      "total": 1
-    },
-    "markdown:that-is-when-you-can-experience-true-joy-when-you-have-no-fear-maybe-just-to-play-a-little-we'll-put-a-little-tree-here": {
-      "original": "That is when you can experience <strong>true</strong> <strong>joy</strong>, when you have no fear. Maybe, just to play a little, we'll put a little tree here.",
-      "value": null,
-      "pages": {
-        "index.html": 1
-      },
-      "total": 1
-    },
     "markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics": {
       "original": "They say <em>everything</em> looks better with odd numbers of things. But sometimes I put even numbers—just to upset the critics.",
-      "value": null,
-      "pages": {
-        "index.html": 1
-      },
-      "total": 1
-    },
-    "markdown:this-content-and-it's-translations-are-editable-from-the-visual-editor-as-well-as-data-files-providing-an-easy-to-use-interface-for-non-technical-people-to-maintain-a-multilingual-site": {
-      "original": "This content and it's translations are editable from the visual editor, as well as data files, providing an easy to use interface for non-technical people to maintain a multilingual site.",
       "value": null,
       "pages": {
         "index.html": 1
@@ -138,6 +114,14 @@
       "value": null,
       "pages": {
         "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:we're-changing-things": {
+      "original": "We're <em><strong>changing</strong></em> things.",
+      "value": null,
+      "pages": {
+        "index.html": 1
       },
       "total": 1
     },
@@ -157,8 +141,8 @@
       },
       "total": 1
     },
-    "rosey-cloudcannon-multilingual-connector": {
-      "original": " Rosey - CloudCannon Multilingual Connector ",
+    "rosey-cloudcannon-connector": {
+      "original": " Rosey - CloudCannon Connector ",
       "value": null,
       "pages": {
         "index.html": 1
@@ -176,6 +160,14 @@
         "tags/Testing/index.html": 1
       },
       "total": 5
+    },
+    "this-is-just-a-test": {
+      "original": " This is just a test. ",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
     },
     "yay-we-support-snippets-now!": {
       "original": " Yay, we support snippets now! ",

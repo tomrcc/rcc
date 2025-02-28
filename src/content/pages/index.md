@@ -18,19 +18,13 @@ content_blocks:
   - _bookshop_name: hero
     background_color: '#ffffff'
     heading:
-      heading_text: Rosey - CloudCannon Multilingual Connector
-      heading_gradient_color: '#F7B2AD'
+      heading_text: Rosey - CloudCannon Connector
+      heading_gradient_color: '#034AD8'
     subheading:
-      markdown_content: >-
+      markdown_content: |-
         A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.
 
-
-        This content and it's translations are editable from the visual editor,
-        as well as data files, providing an easy to use interface for
-        non-technical people to maintain a multilingual site.
-
-
-        Testing **everything** still works post *tidy up*.
+        Control translations via a user friendly interface in CloudCannon.
       color: '#393939'
     image:
       image_path: /src/assets/images/featured-image-5.jpg
@@ -52,7 +46,7 @@ content_blocks:
   - _bookshop_name: left-right
     background_color: '#c8d5b9'
     heading:
-      heading_text: Keep what you need. Delete the rest.
+      heading_text: This is just a test.
       color: '#393939'
     text:
       markdown_content: >-
@@ -60,8 +54,7 @@ content_blocks:
         sometimes I put even numbers—just to upset the critics.
 
 
-        That is when you can experience **true** **joy**, when you have no fear.
-        Maybe, just to play a little, we'll put a little tree here.
+        We're ***changing*** things.
 
 
         It's cold, but it's beautiful. Get tough with it, get strong. Brown is
