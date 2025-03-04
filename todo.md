@@ -1,4 +1,15 @@
 - Option to put everything into one file instead of split by pages - to replace the old i18n workflow
+- Add .mjs to .js files in case the site transferring to isn't using type: module in package.json
+  - Test it works with type set and not
+- Make rosey cloudcannon.config collection the whole rosey folder and exclude 
+  - locales/
+  - smartling-translations/
+  - utils/
+  - base.json
+  - base.urls.json
+  - checks.json
+  - outgoing-smartling-translations.json
+  - source.json
 - Add generation of shared phrases translation file
   - Can keep them on their individual pages and use the existing overwrite workflow to keep them in sync
 - Add to readme about
@@ -12,6 +23,7 @@
   - Using smartling
   - Debugging locally (include setting up local .env and gitignoring it)
 - Chase up CC update for mistaken 'Awaiting page translations'
+- Chase up CC update for removing files with unlink or rm (fs.promises)
 - Record a new intro youtube video
 - npm audit
 - Tests
