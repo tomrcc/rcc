@@ -52,7 +52,6 @@ collections_config:
       tags:
         type: array
         options:
-          allow_create: true
           empty_type: array
       tags[*]:
         type: text
@@ -64,13 +63,6 @@ collections_config:
     disable_add: true
     disable_add_folder: true
     _inputs:
-      colors[*]:
-        type: array
-        options:
-          preview:
-            icon: palette
-      value:
-        type: color
       icons:
         comment: Add an icon from the list of [Font Awesome icons](https://fontawesome.com/search?o=r&m=free). Then add it to the ```src/components/utility/icon.jsx``` file, following the existing pattern.
       code:
@@ -80,33 +72,21 @@ collections_config:
       locales:
         type: array
       locales[*]:
-        type: array
-        options:
-          preview:
-            icon: translate
-  translations:
-    path: rosey/translations
+        type: text
+  translations_config:
+    path: rosey
     icon: translate
     disable_url: true
-    disable_add: false
-    add_options:
-      - name: Add Language
-        icon: translate
-        href: cloudcannon:settings/build
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
+    glob:
+      - config.yaml
+      - 'translations/**'
     _inputs:
       urlTranslation:
         type: text
         comment: Provide a translation for the URL that Rosey will build this page at.
-    disable_add_folder: true
-    disable_file_actions: true
-  translations_config:
-    path: rosey
-    icon: settings
-    glob:
-      - config.yaml
-    disable_add: false
-    disable_add_folder: true
-    disable_file_actions: true
 
 collection_groups:
   - heading: Pages
