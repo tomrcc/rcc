@@ -9,9 +9,11 @@ import { readConfigFile } from "./helpers/file-helper.js";
   console.log("🏗️🏗️ Checking locales...");
   await checkLocales(configData);
   console.log("🏗️🏗️ Checked locales...");
-  console.log("🏗️🏗️ Calling Smartling for translations...");
-  await callSmartling(configData);
-  console.log("🏗️🏗️ Finished calling & generating Smartling files!");
+  if (configData.smartling.smartling_enabled) {
+    console.log("🏗️🏗️ Calling Smartling for translations...");
+    await callSmartling(configData);
+    console.log("🏗️🏗️ Finished calling & generating Smartling files!");
+  }
   console.log("🏗️🏗️ Generating translation files...");
   await generateTranslationFiles(configData);
   console.log("🏗️🏗️ Finished generating translation files!");
