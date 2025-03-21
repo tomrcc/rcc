@@ -34,8 +34,6 @@ async function generateTranslationFilesForLocale(locale, configData) {
   const inputFilePath = configData.rosey_paths.rosey_base_file_path;
   const inputURLFilePath = configData.rosey_paths.rosey_base_urls_file_path;
   const translationFilesDirPath = configData.rosey_paths.translations_dir_path;
-  const localesDirPath = configData.rosey_paths.locales_dir_path;
-  const localePath = path.join(localesDirPath, `${locale}.json`);
   const incomingSmartlingTranslationsDir =
     configData.smartling.incoming_translations_dir;
   const smartlingTranslationsDataFilePath = path.join(
@@ -43,7 +41,6 @@ async function generateTranslationFilesForLocale(locale, configData) {
     `${locale}.json`
   );
 
-  const oldLocaleData = await readJsonFromFile(localePath);
   const inputFileData = await readJsonFromFile(inputFilePath);
   const inputURLFileData = await readJsonFromFile(inputURLFilePath);
   const smartlingTranslationData = await readJsonFromFile(
